@@ -1,11 +1,37 @@
-main{
-    height: 100px;
-}
-
 footer{
-    
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
 
-.svg-container {
-    width: 100%;   
+footer img:nth-child(2){    /*LOGO*/
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+footer p{
+    position: absolute;
+    bottom: 0px;
+    right: 3%;
+    color: #ffffff;
+    font-size: 0.5em;
+}
+
+.FondFooter {        
+    width: 100%;
+    position: absolute;
+    bottom: 0px;   
+    z-index: -1;
+}
+
+@media (min-width: 400px){
+    footer p{
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 700px) {
+    footer p {
+        font-size: 1em;
+    }
 }
