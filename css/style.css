@@ -77,7 +77,7 @@ border-radius: 15px 15px;
     transform: translateY(10px);
 }
 .burger.active span {
-    transform:translateX(0px) rotate(-360deg);
+    transform:translateX(0px) rotate(-180deg);
     background-color: transparent;          /*Le span du milieu disparait*/
     transition: .5s;
 }
@@ -99,45 +99,52 @@ border-radius: 15px 15px;
     background-color: #215D83;
     width: 0px;
     transition: width .9s;
+    border-radius: 0px 0px 0px 15px;
 }
 .headerSmartphone li{
     list-style: none;
-    margin-top: 32%;
     text-align: center;
 }
-  .animation-highlight::after {
-      background-color: #ffffff;
-      content: '';
-      width: 0;
-      height: 1%;
-      /*position:absolute;*/
-      z-index: -1;
-      bottom: -1px;
-      left: 50%;
-      transform: translateX(-50%);
-      transition: all 250ms;
-  }
+.headerSmartphone li:nth-child(1){
+    margin-top: 37px;
+}
+.headerSmartphone li:nth-child(2),
+.headerSmartphone li:nth-child(3){
+    margin-top: 75px;
+}
+.animation-highlight::after {
+    background-color: #ffffff;
+    content: '';
+    width: 0;
+    height: 1%;
+    /*position:absolute;*/
+    z-index: -1;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 250ms;
+}
 
-  .btn1:hover {
-      color: #36A761;
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-  }
+.btn1:hover {
+    color: #36A761;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
 
-  .btn2:hover{
-      color: #FE4239;
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-  }
+.btn2:hover{
+    color: #FE4239;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
 
-  .btn3:hover{
-      color: #E5DF3A;
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-  }
+.btn3:hover{
+    color: #E5DF3A;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
 
-  .animation-highlight:hover::after {
-      height: 115%;
-      width: 105%;
-      border-radius: 5px;
-  }
+.animation-highlight:hover::after {
+    height: 115%;
+    width: 105%;
+    border-radius: 5px;
+}
 /*----------------MAIN---------------------*/
 main{
     height: 1000px;
@@ -175,12 +182,6 @@ footer p{
 
 
 /*--------------------------------------Media query---------------------------*/
-@media (min-width: 375px) {
-    .headerSmartphone li {
-        margin-top: 42%;
-    }
-}
-
 @media (min-width: 400px){
     footer p{
         font-size: 0.7em;
@@ -192,13 +193,6 @@ footer p{
         font-size: 1em;
     }
 }
-
-@media (min-width: 678px) {
-    .headerSmartphone li {
-        margin-top: 20%;
-    }
-}
-
 @media (min-width: 935px){
     .headerDesktop{
         display: inline-flex;
