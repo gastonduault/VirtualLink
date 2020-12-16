@@ -24,6 +24,7 @@ header{
     height: 50px;
     font-family: Iconic;
     align-items: center;
+    z-index: 2;
 }
 .headerAccueil {
     background-color: #215D83;
@@ -100,6 +101,7 @@ border-radius: 15px 15px;
     width: 0px;
     transition: width .9s;
     border-radius: 0px 0px 0px 15px;
+    opacity: .9;
 }
 .headerSmartphone li{
     list-style: none;
@@ -149,6 +151,44 @@ border-radius: 15px 15px;
 main{
     height: 1000px;
 }
+.fondmainaccueil{
+    width: 100%;
+}
+.earth {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    top: 32%;
+    background-image: url(../images/v2.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: -30px -20px 0 0 rgba(0, 0, 0, .15) inset, -70px -30px 0 0 rgba(0, 0, 0, .1) inset, 5px 5px 0 0 rgba(255, 255, 255, .2) inset;
+    -webkit-animation: rotationEarth 5s infinite linear;
+    -moz-animation: rotationEarth 5s infinite linear;
+    animation: rotationEarth 35s infinite linear;
+}
+
+@-webkit-keyframes rotationEarth {
+    from {
+        background-position: left center;
+    }
+
+    to {
+        background-position: -396px center;
+    }
+}
+
+@keyframes rotationEarth {
+    from {
+        background-position: left center;
+    }
+
+    to {
+        background-position: -396px center;
+    }
+}
 
 /*----------------FOOTER-------------------*/
 footer{
@@ -191,6 +231,11 @@ footer p{
 @media (min-width: 700px) {
     footer p {
         font-size: 1em;
+    }
+}
+@media (max-width: 935px){
+    .earth {
+        display: none;
     }
 }
 @media (min-width: 935px){
@@ -237,4 +282,5 @@ footer p{
          transform: translateX(-50%);
          transition: all 250ms;
      }
+
 }
