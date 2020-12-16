@@ -102,7 +102,7 @@ border-radius: 15px 15px;
 }
 .headerSmartphone li{
     list-style: none;
-    margin-top: 20%;
+    margin-top: 32%;
     text-align: center;
 }
   .animation-highlight::after {
@@ -175,6 +175,12 @@ footer p{
 
 
 /*--------------------------------------Media query---------------------------*/
+@media (min-width: 375px) {
+    .headerSmartphone li {
+        margin-top: 42%;
+    }
+}
+
 @media (min-width: 400px){
     footer p{
         font-size: 0.7em;
@@ -184,6 +190,12 @@ footer p{
 @media (min-width: 700px) {
     footer p {
         font-size: 1em;
+    }
+}
+
+@media (min-width: 678px) {
+    .headerSmartphone li {
+        margin-top: 20%;
     }
 }
 
