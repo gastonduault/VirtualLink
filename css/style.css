@@ -196,7 +196,7 @@ main{
     color: #ffffff;
     font-family: Quicksand;
     text-align: left;
-    z-index: 2;
+    z-index: 1;
     position: relative;
     top: 70px;
     padding-left: 2%;
@@ -249,6 +249,16 @@ footer p{
     .earth{
         width: 200px;
         height: 200px;
+    }
+}
+@media (max-width: 985px) {
+    .mainAcceuil p{
+        font-size: 1.0em;
+    }
+}
+@media (max-width: 850px) {
+    .mainAcceuil p {
+        font-size: .8em;
     }
 }
 @media (max-width: 600px) {
