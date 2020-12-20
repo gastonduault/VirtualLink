@@ -153,6 +153,8 @@ main{
 }
 .fondmainaccueil{
     width: 100%;
+    position: absolute;
+    top: 0px;
 }
 .earth {
     width: 300px;
@@ -190,6 +192,17 @@ main{
     }
 }
 
+.mainAcceuil p{
+    color: #ffffff;
+    font-family: Quicksand;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    top: 70px;
+    padding-left: 2%;
+    padding-right: 40%;
+    font-size: 1.2em;
+}
 /*----------------FOOTER-------------------*/
 footer{
     margin-top: 200px;
@@ -227,17 +240,44 @@ footer p{
         font-size: 0.7em;
     }
 }
-
 @media (min-width: 700px) {
     footer p {
         font-size: 1em;
     }
 }
-@media (max-width: 935px){
-    .earth {
-        display: none;
+@media (max-width: 910px) {
+    .earth{
+        width: 200px;
+        height: 200px;
     }
 }
+@media (max-width: 600px) {
+    .earth {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 1390px) {
+    .earth {
+        right: 9%;
+        top: 17%;
+    }
+}
+@media (max-width: 1410px) {
+    .earth {
+        
+        top: 18%;
+    }
+}
+
+
+@media (max-width: 1550px) {
+    .earth {
+        top: 20%;
+        right: 10%;
+    }
+}
+
 @media (min-width: 935px){
     .headerDesktop{
         display: inline-flex;
@@ -282,5 +322,4 @@ footer p{
          transform: translateX(-50%);
          transition: all 250ms;
      }
-
 }
