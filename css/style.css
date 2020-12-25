@@ -198,7 +198,7 @@ main{
     font-size: 0.8em;
 }
 
-.mainAcceuil p{
+.mainAcceuil .intro{
     color: #ffffff;
     font-family: Quicksand;
     text-align: left;
@@ -218,6 +218,41 @@ main{
 .margeTel {
     height: 200px;
     background-color: #215D83;
+}
+.mainAcceuil .sectionOrdi{
+    width: 100%;
+    position: relative;
+    top: 600Px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.mainAcceuil .sectionOrdi article {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    padding: 17px 10px;
+    color: #000000;
+    width: 300px;
+    font-family: Quicksand;
+}
+.mainAcceuil .sectionOrdi article p{
+    font-size: 1.2em;
+}
+h3{
+    margin-top: 7px;
+}
+.positif{
+    color: #36A761;
+}
+.negatif{
+    color:#FE4239;
+}
+.neutre{
+    color:#E5DF3A;
 }
 
 /*----------------FOOTER-------------------*/
@@ -261,7 +296,7 @@ footer p{
     }
 }*/
 @media (min-width: 550px) {
-    .mainAcceuil p {
+    .mainAcceuil .intro {
         font-size: 0.9em;
     }
 
@@ -337,7 +372,7 @@ footer p{
            top: 50px;
            font-size: 1.5em;
      }
-     .mainAcceuil p{
+     .mainAcceuil .intro{
          top: 135px;
          padding-left: 2%;
          padding-right: 40%;
@@ -372,7 +407,7 @@ footer p{
     }
 }
 @media (min-width: 200px) {
-    .mainAcceuil p {
+    .mainAcceuil .intro {
         font-size: 0.7em;
     }
 
@@ -392,7 +427,7 @@ footer p{
 }
 
 @media (min-width: 450px) {
-    .mainAcceuil p {
+    .mainAcceuil .intro {
         font-size: 0.8em;
     }
 
@@ -409,7 +444,7 @@ footer p{
 }
 
 @media (min-width: 750px) {
-    .mainAcceuil p {
+    .mainAcceuil .intro {
         font-size: 1.1em;
     }
 
@@ -418,7 +453,7 @@ footer p{
     }
 }
 @media (min-width: 1350px) {
-    .mainAcceuil p {
+    .mainAcceuil .intro {
         font-size: 1.5em;
     }
 
@@ -427,7 +462,7 @@ footer p{
     }
 }
 @media (min-width: 1650px) {
-    .mainAcceuil p {
+    .mainAcceuil .intro {
         font-size: 1.7em;
     }
 
