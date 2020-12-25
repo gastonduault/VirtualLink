@@ -252,27 +252,14 @@ footer p{
 
 
 /*--------------------------------------Media query---------------------------*/
-@media (min-width: 350px){
-    .mainAcceuil p{
-        font-size: 0.7em;
+
+
+/*@media (max-width: 910px) {
+    .earth{
+        width: 200px;
+        height: 200px;
     }
-    .mainAcceuil h2{
-        font-size: 0.9em;
-    }
-}
-@media (min-width: 400px){
-    footer p{
-        font-size: 0.7em;
-    }
-}
-@media (min-width: 450px) {
-    .mainAcceuil p {
-        font-size: 0.8em;
-    }
-    .mainAcceuil h2 {
-        font-size: 1em;
-    }
-}
+}*/
 @media (min-width: 550px) {
     .mainAcceuil p {
         font-size: 0.9em;
@@ -281,50 +268,13 @@ footer p{
     .mainAcceuil h2 {
         font-size: 1.1em;
     }
-}
-@media (min-width: 700px) {
-    footer p {
-        font-size: 1em;
-    }
-}
-@media (min-width: 750px) {
-    .mainAcceuil p {
-        font-size: 1.1em;
-    }
 
-    .mainAcceuil h2 {
-        font-size: 1.3em;
-    }
-}
-/*@media (max-width: 910px) {
-    .earth{
+    .earth {
         width: 200px;
         height: 200px;
     }
-}*/
-@media (max-width: 600px) {
-    .earth {
-        width: 100px;
-        height: 100px;
-    }
 }
-@media (min-width: 1390px) {
-    .earth {
-        right: 9%;
-        top: 17%;
-    }
-}
-@media (min-width: 1410px) {
-    .earth { 
-        top: 18%;
-    }
-}
-@media (min-width: 1550px) {
-    .earth {
-        top: 20%;
-        right: 0%;
-    }
-}
+
 @media (min-width: 935px){
     .headerDesktop{
         display: inline-flex;
@@ -393,4 +343,95 @@ footer p{
          padding-right: 40%;
          font-size: 1.3em;
      }
+}
+
+@media (max-width: 1150px) {
+    .earth {
+        right: 7%;
+        top: 15%;
+    }
+}
+
+@media (min-width: 1390px) {
+    .earth {
+        right: 9%;
+        top: 17%;
+    }
+}
+
+@media (min-width: 1410px) {
+    .earth {
+        top: 18%;
+    }
+}
+
+@media (min-width: 1550px) {
+    .earth {
+        top: 20%;
+        right: 0%;
+    }
+}
+@media (min-width: 350px) {
+    .mainAcceuil p {
+        font-size: 0.7em;
+    }
+
+    .mainAcceuil h2 {
+        font-size: 0.9em;
+    }
+
+    .earth {
+        top: 25%;
+        right: 5%;
+    }
+}
+@media (min-width: 400px) {
+    footer p {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 450px) {
+    .mainAcceuil p {
+        font-size: 0.8em;
+    }
+
+    .mainAcceuil h2 {
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 700px) {
+    footer p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 750px) {
+    .mainAcceuil p {
+        font-size: 1.1em;
+    }
+
+    .mainAcceuil h2 {
+        font-size: 1.3em;
+    }
+}
+@media (min-width: 1350px) {
+    .mainAcceuil p {
+        font-size: 1.5em;
+    }
+
+    .mainAcceuil h2 {
+        font-size: 1.7em;
+    }
+}
+@media (min-width: 1650px) {
+    .mainAcceuil p {
+        font-size: 1.7em;
+    }
+
+    .mainAcceuil h2 {
+        font-size: 1.9em;
+    }
 }
