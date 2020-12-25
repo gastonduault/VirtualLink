@@ -371,13 +371,13 @@ footer p{
         right: 0%;
     }
 }
-@media (min-width: 350px) {
+@media (min-width: 200px) {
     .mainAcceuil p {
         font-size: 0.7em;
     }
 
     .mainAcceuil h2 {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 
     .earth {
