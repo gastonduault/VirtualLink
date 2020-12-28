@@ -148,7 +148,7 @@ border-radius: 15px 15px;
     border-radius: 5px;
 }
 /*----------------MAIN---------------------*/
-main{
+.mainAcceuil{
     height: 1000px;
 }
 .earth {
@@ -219,28 +219,8 @@ main{
     height: 200px;
     background-color: #215D83;
 }
-.mainAcceuil .sectionOrdi{
-    width: 100%;
-    position: relative;
-    top: 600Px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.mainAcceuil .sectionOrdi article {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
-    display: block;
-    flex-direction: column;
-    text-align: center;
-    padding: 17px 10px;
-    color: #000000;
-    width: 300px;
-    font-family: Quicksand;
-}
-.mainAcceuil .sectionOrdi article p{
-    font-size: 1.2em;
+.sectionOrdi{
+    display: none;
 }
 h3{
     margin-top: 7px;
@@ -287,14 +267,14 @@ footer p{
 
 
 /*--------------------------------------Media query---------------------------*/
-
-
-/*@media (max-width: 910px) {
-    .earth{
-        width: 200px;
-        height: 200px;
+@media (min-width: 1630px) {
+    .mainAcceuil .sectionOrdi {
+        top: 800px;
     }
-}*/
+    .mainAcceuil{
+        height: 1200px;
+    }
+}
 @media (min-width: 550px) {
     .mainAcceuil .intro {
         font-size: 0.9em;
@@ -309,7 +289,31 @@ footer p{
         height: 200px;
     }
 }
-
+@media (min-width: 945px){
+    .mainAcceuil .sectionOrdi {
+        width: 100%;
+        position: relative;
+        top: 600Px;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .mainAcceuil .sectionOrdi article {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        padding: 17px 10px;
+        color: #000000;
+        width: 300px;
+        font-family: Quicksand;
+    }
+    .mainAcceuil .sectionOrdi article p {
+        font-size: 1.2em;
+    }
+}
 @media (min-width: 935px){
     .headerDesktop{
         display: inline-flex;
