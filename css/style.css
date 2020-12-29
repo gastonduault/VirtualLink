@@ -314,6 +314,29 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
 }
+.sectioncartesNefaste{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.carteNefaste{
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    width: 170px;
+}
+.carteNefaste:nth-child(2){
+    margin-top: 150px;
+}
+.carteNefaste:nth-child(3){
+    margin-top: 300px;
+}
+.carteNefaste p{
+    padding-top: 20px;
+    color: #FE4239;
+    font-family: Quicksand;
+}
 /*----------------FOOTER-------------------*/
 footer {
     margin-top: 200px;
@@ -606,6 +629,9 @@ footer p {
 @media (max-width: 280px) {
     .mainAcceuil {
         height: 1100px;
+    }
+    .carteNefaste p{
+        font-size: 0.8em;
     }
 }
 @media (max-width: 410px){
