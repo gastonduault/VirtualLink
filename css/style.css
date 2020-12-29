@@ -305,11 +305,14 @@ h3 {
     text-align: left;
     color: #FE4239;
     font-family: Quicksand;
-    padding-top: 100px;
+    padding-top: 80px;
     font-size: 2.5em;
 }
-.imageNefaste{
-    float: right;
+.hautpageNefaste{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 /*----------------FOOTER-------------------*/
 footer {
@@ -595,10 +598,18 @@ footer p {
     .mainAcceuil {
         height: 900px;
     }
+    .mainNefaste .hautpageNefaste img{
+        width: 100px;
+    }
 }
 
 @media (max-width: 280px) {
     .mainAcceuil {
         height: 1100px;
+    }
+}
+@media (max-width: 410px){
+    .mainNefaste h2 {
+        font-size: 1.7em;
     }
 }
