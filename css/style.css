@@ -25,20 +25,7 @@ header {
     font-family: Iconic;
     align-items: center;
     z-index: 2;
-}
-
-.headerAccueil {
-    background-color: #215D83;
-}
-
-header a:link,
-header a:visited {
-    color: #fff;
-    text-decoration: none;
-}
-
-.headerDesktop {
-    display: none;
+    background-color: #266A95;
 }
 
 header .logo {
@@ -47,6 +34,36 @@ header .logo {
     float: left;
 }
 
+.headerDesktop {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+.headerDesktop a h1 {
+
+    position: relative;
+    display: block;
+    font-size: 36px;
+    width: 500px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+.headerDesktop nav {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.headerDesktop {
+    display: none;
+}
+
+/* Menu Burger logo + anim*/
 .burger {
     width: 42px;
     height: 24px;
@@ -108,6 +125,8 @@ header .logo {
     background-color: #215D83;
 }
 
+/* Menu Burger logo + anim */
+/* Menu inside burger */
 .headerSmartphone nav {
     position: absolute;
     right: 0px;
@@ -134,12 +153,22 @@ header .logo {
     margin-top: 75px;
 }
 
+/* Menu inside burger */
+/* Menu Burger */
+
+/* Animation pour le nav */
+header a:link,
+header a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
 .animation-highlight::after {
     background-color: #ffffff;
     content: '';
     width: 0;
     height: 1%;
-    /*position:absolute;*/
+
     z-index: -1;
     bottom: -1px;
     left: 50%;
@@ -168,12 +197,26 @@ header .logo {
     border-radius: 5px;
 }
 
+/* Animation pour le nav */
+
 /*----------------MAIN---------------------*/
-.mainAcceuil {
+main {
     height: 1000px;
 }
 
+.fondmainaccueil {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+/* Animation terre */
 .earth {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    top: 32%;
     background-image: url(../images/v2.png);
     background-size: cover;
     border-radius: 50%;
@@ -182,11 +225,6 @@ header .logo {
     -webkit-animation: rotationEarth 5s infinite linear;
     -moz-animation: rotationEarth 5s infinite linear;
     animation: rotationEarth 35s infinite linear;
-    position: absolute;
-    right: 4%;
-    top: 25%;
-    width: 90px;
-    height: 90px;
 }
 
 @-webkit-keyframes rotationEarth {
@@ -209,81 +247,18 @@ header .logo {
     }
 }
 
-.mainAcceuil h2 {
-    color: #fff;
-    z-index: 1;
-    font-family: Quicksand;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    font-size: 0.8em;
-}
+/* Animatio terre */
 
-.mainAcceuil .intro {
+.mainAcceuil p {
     color: #ffffff;
     font-family: Quicksand;
     text-align: left;
     z-index: 1;
-    padding-right: 20%;
-    padding-left: 1%;
-    font-size: 0.6em;
-    position: absolute;
-    top: 100px;
-}
-
-.fondmainaccueil {
-    width: 100%;
-    position: absolute;
-    top: 200px;
-}
-
-.margeTel {
-    height: 200px;
-    background-color: #215D83;
-}
-
-.mainAcceuil .sectionOrdi {
-    display: none;
-}
-.mainAcceuil article {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
-    color: #000000;
-}
-.mainAcceuil .sectionTab{
-     width: 100%;
-     position: relative;
-     top: 400Px;
-     display: block;
-     flex-direction: column;
-}
-.mainAcceuil .sectionTab article{
-    text-align: left;
-    width: 60%;
-    margin-bottom: 2%;
-    padding: 15px 15px;
-    margin-right: 20%;
-    margin-left: 20%;
-}
-.mainAcceuil .sectionTab article img{
-    float: right;
-}
-h3 {
-    margin-top: 7px;
-}
-
-.positif {
-    color: #36A761;
-}
-
-.negatif {
-    color: #FE4239;
-}
-
-.neutre {
-    color: #E5DF3A;
+    position: relative;
+    top: 70px;
+    padding-left: 2%;
+    padding-right: 40%;
+    font-size: 1.2em;
 }
 
 /*----------------FOOTER-------------------*/
@@ -319,47 +294,16 @@ footer p {
 
 
 /*--------------------------------------Media query---------------------------*/
-@media (min-width: 550px) {
-    .mainAcceuil .intro {
-        font-size: 0.9em;
-    }
-
-    .mainAcceuil h2 {
-        font-size: 1.1em;
-    }
-
-    .earth {
-        width: 200px;
-        height: 200px;
+@media (min-width: 400px) {
+    footer p {
+        font-size: 0.7em;
     }
 }
 
-@media (min-width: 945px) {
-    .mainAcceuil .sectionOrdi {
-        width: 100%;
-        position: relative;
-        top: 600Px;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: space-around;
+@media (min-width: 700px) {
+    footer p {
+        font-size: 1em;
     }
-
-    .mainAcceuil .sectionOrdi article {
-        display: block;
-        flex-direction: column;
-        text-align: center;
-        padding: 17px 10px;
-        width: 300px;
-        font-family: Quicksand;
-    }
-
-    .mainAcceuil .sectionOrdi article p {
-        font-size: 1.2em;
-    }
-
-     .mainAcceuil .sectionTab {
-         display: none;
-     }
 }
 
 @media (min-width: 935px) {
@@ -368,7 +312,6 @@ footer p {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        padding-left: 7%;
     }
 
     .headerSmartphone {
@@ -404,170 +347,55 @@ footer p {
         content: '';
         width: 0;
         height: 1%;
+
         position: absolute;
         z-index: -1;
         bottom: -1px;
         left: 50%;
+
         transform: translateX(-50%);
         transition: all 250ms;
     }
-    .fondmainaccueil {
-        width: 100%;
-        top: 50px;
-    }
-
-    .margeTel {
-        height: 0px;
-    }
-
-    .earth {
-        width: 300px;
-        height: 300px;
-        right: 10%;
-        top: 32%;
-    }
-
-    .mainAcceuil h2 {
-        top: 50px;
-        font-size: 1.5em;
-    }
-
-    .mainAcceuil .intro {
-        top: 135px;
-        padding-left: 2%;
-        padding-right: 40%;
-        font-size: 1.3em;
+}
+@media (max-width: 910px) {
+    .earth{
+        width: 200px;
+        height: 200px;
     }
 }
-
-@media (max-width: 1150px) {
-    .earth {
-        right: 7%;
-        top: 15%;
+@media (max-width: 985px) {
+    .mainAcceuil p{
+        font-size: 1.0em;
     }
 }
-
-@media (min-width: 1390px) {
+@media (max-width: 850px) {
+    .mainAcceuil p {
+        font-size: .8em;
+    }
+}
+@media (max-width: 600px) {
+    .earth {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 1390px) {
     .earth {
         right: 9%;
         top: 17%;
     }
 }
-
-@media (min-width: 1410px) {
+@media (max-width: 1410px) {
     .earth {
+        
         top: 18%;
     }
 }
 
-@media (min-width: 1550px) {
+
+@media (max-width: 1550px) {
     .earth {
         top: 20%;
-        right: 0%;
-    }
-}
-
-@media (min-width: 200px) {
-    .mainAcceuil .intro {
-        font-size: 0.7em;
-    }
-
-    .mainAcceuil h2 {
-        font-size: 0.7em;
-    }
-
-    .earth {
-        top: 25%;
-        right: 5%;
-    }
-}
-
-@media (min-width: 400px) {
-    footer p {
-        font-size: 0.7em;
-    }
-}
-
-@media (min-width: 450px) {
-    .mainAcceuil .intro {
-        font-size: 0.8em;
-    }
-
-    .mainAcceuil h2 {
-        font-size: 1em;
-    }
-}
-
-
-@media (min-width: 700px) {
-    footer p {
-        font-size: 1em;
-    }
-}
-
-@media (min-width: 750px) {
-    .mainAcceuil .intro {
-        font-size: 1.1em;
-    }
-
-    .mainAcceuil h2 {
-        font-size: 1.3em;
-    }
-}
-
-@media (min-width: 1350px) {
-    .mainAcceuil .intro {
-        font-size: 1.5em;
-    }
-
-    .mainAcceuil h2 {
-        font-size: 1.7em;
-    }
-}
-
-@media (min-width: 1650px) {
-    .mainAcceuil .intro {
-        font-size: 1.7em;
-    }
-
-    .mainAcceuil h2 {
-        font-size: 1.9em;
-    }
-}
-@media (min-width: 1630px) {
-    .mainAcceuil .sectionOrdi {
-        top: 800px;
-    }
-    .mainAcceuil {
-        height: 1200px;
-    }
-}
-@media (max-width: 905px){
-    .mainAcceuil .sectionTab{
-        top: 300px;
-    }
-}
-@media (max-width: 530px){
-    .mainAcceuil .sectionTab article{
-        width: 80%;
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-bottom: 20px;
-    }
-    .mainAcceuil .sectionTab {
-        top: 200px;
-    }
-    .mainAcceuil{
-        height: 800px;
-    }
-}
-@media (max-width: 381px){
-    .mainAcceuil {
-        height: 900px;
-    }
-}
-@media (max-width: 280px){
-    .mainAcceuil{
-        height: 1100px;
+        right: 10%;
     }
 }
