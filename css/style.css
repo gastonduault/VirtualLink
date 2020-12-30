@@ -295,6 +295,9 @@ h3 {
     color: #FE4239;
 }
 
+.titre_neutre {
+    color: #E5DF3A;
+}
 /*------------------MAIN-NEFASTE------------------------*/
 .mainNefaste {
     height: 1000px;
@@ -785,7 +788,7 @@ footer p {
         font-size: 1.2em;
     }
     #card-1-neutre {
-        top:-250px;
+        top:-350px;
     }
 }
 
@@ -848,7 +851,7 @@ footer p {
 }
 
 /* --------Fond svg page neutre-------- */
-/* Fond centre */
+/* Fond */
 .Fond-middle {
     position:relative;
     width:100%;
@@ -864,7 +867,7 @@ footer p {
 }
 
 #fond-middle-s {
-    top:200px;
+    top:150px;
 }
 
 
@@ -932,7 +935,7 @@ h3.neutre{
     height:400px;
     max-height: 75vw;
     position:relative;
-    top:200px;
+    top:0px;
     left:10%;
     right:10%;
     min-width: 300px;
@@ -951,7 +954,7 @@ footer.neutre{
     height:80px;
     color:black;
     margin-top: 230px;
-    background-color: #E5DF3A;
+    
 }
 
 
