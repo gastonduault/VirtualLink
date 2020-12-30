@@ -32,6 +32,10 @@ header {
     background-color: #215D83;
 }
 
+header.neutre {
+    background-color:#E5DF3A;
+}
+
 .headerNefaste,
 .headerNefaste .headerSmartphone nav {
     background-color: #FE4239;
@@ -861,7 +865,6 @@ footer p {
 #fond-middle-s {
     top:200px;
 }
-/* fond footer*/
 
 
 
@@ -947,6 +950,7 @@ footer.neutre{
     height:80px;
     color:black;
     margin-top: 230px;
+    background-color: #E5DF3A;
 }
 
 
