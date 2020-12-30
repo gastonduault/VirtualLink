@@ -636,3 +636,319 @@ footer p {
         font-size: 1.7em;
     }
 }
+
+/* -------media querydu Main neutre------- */
+
+@media (min-width: 800px) {
+    .img-neutre-m {
+        display:none;
+    }
+    .img-neutre-g {
+        display:block;
+    }
+
+    .img-neutre-s {
+        display:none;
+    }
+    article.neutre{
+        width:50%;
+    }
+    h2.neutre{
+    font-size:3em;
+    }
+
+    #card-1-neutre {
+        flex-direction: row;
+        
+        height:auto;
+        
+    }
+
+    #card-2-neutre {
+        flex-direction:row;
+        
+    }
+}
+
+@media (max-width: 800px) and (min-width: 585px) {
+    .img-neutre-m {
+        display:block;
+    }
+    .img-neutre-g {
+        display:none;
+    }
+
+    .img-neutre-s {
+        display:none;
+    }
+    
+    article.neutre{
+        width:90%;
+    }
+    h2.neutre{
+        font-size:2.8em;
+    }
+    #card-1-neutre {
+        flex-direction: column;
+    }
+
+    #card-2-neutre {
+        flex-direction: column
+    }
+}
+
+@media (max-width: 585px) {
+    .img-neutre-m {
+        display:none;
+    }
+    .img-neutre-g {
+        display:none;
+    }
+
+    .img-neutre-s {
+        display:block;
+    }
+    article.neutre{
+        width:95%;
+    }
+    h2.neutre{
+        font-size:2.5em;
+    }
+    #card-1-neutre {
+        flex-direction: column;
+    }
+    #card-2-neutre {
+        flex-direction: column;
+    }
+}
+/*---- Media query fond neutre/ police----*/
+@media (min-width: 1000px) {
+    #fond-middle-m {
+        display:none;
+    }
+    #fond-middle-g {
+        display:block;
+    }
+
+    #fond-middle-s {
+        display:none;
+    }
+   p.neutre {
+        font-size: 1.2vw;
+    }
+    h3.neutre{
+        font-size: 2vw;
+
+    } 
+
+    #card-1-neutre {
+        top:-450px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+    #fond-middle-m {
+        display:block;
+    }
+    #fond-middle-g {
+        display:none;
+    }
+
+    #fond-middle-s {
+        display:none;
+    }
+    p.neutre {
+        font-size: 1.2em;
+    }
+    #card-1-neutre {
+        top:-300px;
+    }
+}
+
+@media (max-width: 600px) {
+    #fond-middle-m {
+        display:none;
+    }
+    #fond-middle-g {
+        display:none;
+    }
+
+    #fond-middle-s {
+        display:block;
+    }
+    p.neutre {
+        font-size: 1.2em;
+    }
+    #card-1-neutre {
+        top:-250px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #footer-neutre-m {
+        display:none;
+    }
+    #footer-neutre-g {
+        display:block;
+    }
+
+    #footer-neutre-s {
+        display:none;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 585px) {
+    #footer-neutre-m {
+        display:block;
+    }
+    #footer-neutre-g {
+        display:none;
+    }
+
+    #footer-neutre-s {
+        display:none;
+    }
+    footer.neutre{
+        height:70px;
+    }
+}
+
+@media (max-width: 585px) {
+    #footer-neutre-m {
+        display:none;
+    }
+    #footer-neutre-g {
+        display:none;
+    }
+
+    #footer-neutre-s {
+        display:block;
+    }
+    footer.neutre{
+        height:60px;
+    }
+}
+/* -----------PARTIE NEUTRE---------------*/
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397) ;
+    position: relative;
+    border:0;
+}
+
+.zoom:hover {
+    transform: scale(1.01);
+}
+
+/* --------Fond svg page neutre-------- */
+/* Fond centre */
+.Fond-middle {
+    position:relative;
+    width:100%;
+}
+
+
+#fond-middle-g {
+    top:100px;
+}
+
+#fond-middle-m {
+    top:150px;
+}
+
+#fond-middle-s {
+    top:200px;
+}
+/* fond footer*/
+
+
+
+/* ------Main neutre--------*/
+main.neutre {
+    position:relative;
+    top:100px;
+    font-size: 0.2em;
+    text-decoration:none;
+}
+
+
+
+h2.neutre { /* titre neutre*/
+    text-align: center;
+    color:#E5DF3A;
+    font-size: 4em;
+    position: relative;
+    top:20px;
+    margin:80px;
+}
+
+p.neutre {
+    color:black;
+    font-size: 1.2em;
+    position: relative;
+    left:10%;
+    width:80%;
+}
+
+h2 + p.neutre {
+    font-size:1.5em;
+}
+
+h3.neutre{
+    text-align: center;
+}
+
+
+/* card neutre */
+.card-img {
+    width:auto;
+}
+
+
+#card-1-neutre {
+    width:80%;
+    height:400px;
+    max-height: 75vw;
+    position:relative;
+    left:10%;
+    right:10%;
+    min-width: 300px;
+    max-width:1200px;
+    
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card-2-neutre {
+    width:80%;
+    height:400px;
+    max-height: 75vw;
+    position:relative;
+    top:200px;
+    left:10%;
+    right:10%;
+    min-width: 300px;
+    max-width:1200px;
+
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+
+/* footer neutre et media query du fond*/
+
+footer.neutre{
+    height:80px;
+    color:black;
+    margin-top: 230px;
+}
+
+
+
+
