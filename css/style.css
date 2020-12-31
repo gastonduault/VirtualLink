@@ -29,7 +29,7 @@ header {
     align-items: center;
     z-index: 2;
 }
-
+/* Les couleur pour le header */
 .headerAccueil,
 .headerAccueil .headerSmartphone nav{
     background-color: #215D83;
@@ -40,15 +40,20 @@ header.neutre .headerSmartphone nav {
     background-color:#E5DF3A;
 }
 
+.headerNefaste,
+.headerNefaste .headerSmartphone nav {
+    background-color: #FE4239;
+}
+
+.headerBenefique,
+.headerBenefique .headerSmartphone nav{
+    background-color: #36A761;
+}
+/* Les couleur pour le header */
 header.neutre a.neutre:link,
 header.neutre a.neutre:visited {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     text-decoration: none;
-}
-
-.headerNefaste,
-.headerNefaste .headerSmartphone nav {
-    background-color: #FE4239;
 }
 
 header a:link,
@@ -151,7 +156,7 @@ header .logo {
 .headerSmartphone li:nth-child(3) {
     margin-top: 75px;
 }
-
+/* ANIMATION NAV SELECTION */
 .animation-highlight::after {
     background-color: #ffffff;
     content: '';
@@ -185,6 +190,7 @@ header .logo {
     width: 105%;
     border-radius: 5px;
 }
+/* ANIMATION NAV SELECTION */
 
 /*----------------MAIN-Accueil---------------------*/
 .mainAcceuil {
@@ -309,6 +315,158 @@ h3 {
     color: #E5DF3A;
     text-shadow: 1px 1px 0px rgb(230, 252, 104);
 }
+/*----------------FOOTER-------------------*/
+footer {
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+}
+
+footer img:nth-child(2) {
+    /*LOGO*/
+    margin-bottom: 3%;
+    margin-left: 3%;
+    max-width:50px;
+}
+
+footer p {
+    position: absolute;
+    bottom: 0px;
+    right: 3%;
+    color: #ffffff;
+    font-size: 0.5em;
+}
+
+.FondFooter {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+/*------------------MAIN-BENEFIQUE------------------------*/
+
+/* MAIN PARTIE BENEFIQUE */
+.benefique-main {
+    padding-top: 80px;
+}
+.benefique-main div section,
+.benefique-main section,
+.benefique-main p  {
+    /* Centrer le bloc et évité qu'il s'étire de trop */
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.benefique-main div section h3 {
+    /*Les titres*/
+    text-transform: uppercase;
+    padding-left: 25%;
+    font-family: Iconic;
+    font-size: 48px;
+    padding-right: 2.5%;
+}
+.benefique-main .image section h3{
+    /* Pour la police blanche sur le cadre vert */
+    color: #fff;
+}
+.benefique-main .image section div p{
+    /* Pour la police blanche sur le cadre vert */
+    color: #fff;
+}
+
+.benefique-main div section div p {
+    /*Les paragraphes*/
+    text-align: justify;
+    font-size: 36px;
+    font-family: Quicksand;
+    padding-right: 2.5%;
+}
+.benefique-main section img {
+    /* premiere image */
+    width: 25%;
+}
+.benefique-main div section div img{
+    /* Les autres images */
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.benefique-main div section div {
+    /*pour la partie texte+image */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.benefique-main .change-cote section div{ /* Change le cote de l'image */
+    flex-direction: row-reverse;
+}
+.benefique-main .change-cote section h3{ /* Aligne le titre */
+    padding-left: 2.5%;
+}
+.benefique-main .change-cote section div p{ /* Aligne le paragraphe */
+    padding-left: 2.5%;
+    margin-left: 0%;
+}
+
+.benefique-main>img {
+    /*La vague qui separe les parties*/
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    max-height: 350px;
+    min-height: 100px;
+    margin-top: 2.5%;
+}
+
+/* Pour la 1er partie */
+.benefique-main section h2 {
+    /* Titre */
+    text-transform: uppercase;
+    font-family: Iconic;
+    font-size: 80px;
+    color: #36A761;
+    padding-left: 2.5%;
+}
+
+.benefique-main>p {
+    /* Le texte */
+    text-align: justify;
+    font-size: 36px;
+    font-family: Quicksand;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.benefique-main>section {
+    /* Image + titre */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*La partie avec le bloc vert*/
+.benefique-main .image > img{
+    color: white;
+    background-color: white;
+    width: 100%;
+    max-height: 100px;
+}
+.benefique-main .image>img{
+    margin-bottom: -7px;
+}
+.benefique-main .image div{
+    background-color: #36A761;
+}
+.benefique-main .image div section h3{
+    margin-top: 0px;
+}
+/*La partie avec le bloc vert*/
+
+/* MAIN PARTIE BENEFIQUE */
 
 /*------------------MAIN-NEFASTE------------------------*/
 .mainNefaste {
@@ -353,37 +511,40 @@ h3 {
     color: #FE4239;
     font-family: Quicksand;
 }
-/*----------------FOOTER-------------------*/
-footer {
-    margin-top: 200px;
-    position: relative;
-    width: 100%;
-}
-
-footer img:nth-child(2) {
-    /*LOGO*/
-    margin-bottom: 3%;
-    margin-left: 3%;
-    max-width:50px;
-}
-
-footer p {
-    position: absolute;
-    bottom: 0px;
-    right: 3%;
-    color: #ffffff;
-    font-size: 0.5em;
-}
-
-.FondFooter {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    z-index: -1;
-}
 
 
 /*--------------------------------------Media query---------------------------*/
+
+/* MEDIA QUERY PARTIE BENEFIQUE */
+
+@media (max-width: 900px) { /* Media query pour le milieu format */
+    .benefique-main section h2 {
+        font-size: 60px;
+    }
+
+    .benefique-main div section h3 {
+        font-size: 35px;
+    }
+
+    .benefique-main div section div p, .benefique-main p {
+        font-size: 21px;
+    }
+}
+@media (max-width: 600px) { /* Media query pour le petit format */
+    .benefique-main section h2 {
+        font-size: 31px;
+    }
+
+    .benefique-main div section h3 {
+        font-size: 27px;
+    }
+
+    .benefique-main div section div p, .benefique-main p {
+        font-size: 12px;
+    }
+}
+/* MEDIA QUERY PARTIE BENEFIQUE */
+
 @media (min-width: 550px) {
     .mainAcceuil .intro {
         font-size: 0.9em;
