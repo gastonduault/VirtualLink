@@ -515,7 +515,136 @@ footer p {
     color: #FE4239;
     font-family: Quicksand;
 }
+/* -----------PARTIE NEUTRE---------------*/
 
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397) ;
+    position: relative;
+    border:0;
+}
+
+.zoom:hover {
+    transform: scale(1.01);
+}
+
+/* --------Fond svg page neutre-------- */
+/* Fond */
+.Fond-middle {
+    position:relative;
+    width:100%;
+}
+
+
+#fond-middle-g {
+    top:100px;
+}
+
+#fond-middle-m {
+    top:150px;
+}
+
+#fond-middle-s {
+    top:150px;
+}
+
+
+
+/* ------Main neutre--------*/
+main.neutre {
+    position:relative;
+    top:100px;
+    font-size: 0.2em;
+    text-decoration:none;
+}
+
+
+
+h2.neutre { /* titre neutre*/
+    text-align: center;
+    color:#E5DF3A;
+    font-weight: bold;
+    
+    position: relative;
+    top:20px;
+    margin:80px 30px;
+}
+
+p.neutre {
+    color:black;
+    
+    position: relative;
+
+}
+
+h2 + p.neutre {
+    font-size:1.5em;
+    width:80%;
+    left:10%;
+}
+
+section + p.neutre {
+    position: relative;
+    font-size:1.5em;
+    width:80%;
+    left:10%;
+    bottom:100px;
+}
+
+h3.neutre{
+    text-align: center;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+
+/* card neutre */
+.card-img {
+    width:auto;
+}
+
+
+#card-1-neutre {
+    width:90%;
+    height:400px;
+    max-height: 75vw;
+    position:relative;
+    left:5%;
+    right:5%;
+    min-width: 300px;
+    max-width:1200px;
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card-2-neutre {
+    width:90%;
+    height:400px;
+    max-height: 75vw;
+    position:relative;
+    top:100px;
+    left:5%;
+    right:5%;
+    min-width: 300px;
+    max-width:1200px;
+
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+
+/* footer neutre */
+
+footer.neutre{
+    
+    color:black;
+    margin-top: 200px;
+}
 
 /*--------------------------------------Media query---------------------------*/
 
@@ -932,6 +1061,7 @@ footer p {
 
     #card-1-neutre {
         top:-410px;
+        left:10%;
     }
 }
 
@@ -1027,136 +1157,7 @@ footer p {
         height:60px;
     }
 }
-/* -----------PARTIE NEUTRE---------------*/
 
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397) ;
-    position: relative;
-    border:0;
-}
-
-.zoom:hover {
-    transform: scale(1.01);
-}
-
-/* --------Fond svg page neutre-------- */
-/* Fond */
-.Fond-middle {
-    position:relative;
-    width:100%;
-}
-
-
-#fond-middle-g {
-    top:100px;
-}
-
-#fond-middle-m {
-    top:150px;
-}
-
-#fond-middle-s {
-    top:150px;
-}
-
-
-
-/* ------Main neutre--------*/
-main.neutre {
-    position:relative;
-    top:100px;
-    font-size: 0.2em;
-    text-decoration:none;
-}
-
-
-
-h2.neutre { /* titre neutre*/
-    text-align: center;
-    color:#E5DF3A;
-    font-weight: bold;
-    
-    position: relative;
-    top:20px;
-    margin:80px 30px;
-}
-
-p.neutre {
-    color:black;
-    
-    position: relative;
-
-}
-
-h2 + p.neutre {
-    font-size:1.5em;
-    width:80%;
-    left:10%;
-}
-
-section + p.neutre {
-    position: relative;
-    font-size:1.5em;
-    width:80%;
-    left:10%;
-    bottom:100px;
-}
-
-h3.neutre{
-    text-align: center;
-    text-transform:uppercase;
-    font-weight: bold;
-}
-
-
-/* card neutre */
-.card-img {
-    width:auto;
-}
-
-
-#card-1-neutre {
-    width:90%;
-    height:400px;
-    max-height: 75vw;
-    position:relative;
-    left:5%;
-    right:5%;
-    min-width: 300px;
-    max-width:1200px;
-    
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#card-2-neutre {
-    width:90%;
-    height:400px;
-    max-height: 75vw;
-    position:relative;
-    top:100px;
-    left:5%;
-    right:5%;
-    min-width: 300px;
-    max-width:1200px;
-
-    display:flex;
-    align-items: center;
-    justify-content:space-around;
-}
-
-
-
-/* footer neutre et media query du fond*/
-
-footer.neutre{
-    
-    color:black;
-    margin-top: 230px;
-}
 
 
 
