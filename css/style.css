@@ -15,6 +15,10 @@
 body {
     margin:0;
 }
+
+main {
+    font-family: Quicksand;
+}
 /*----------------HEADER--------------------*/
 header {
     position: fixed;
@@ -313,6 +317,7 @@ h3 {
 
 .titre_neutre a { /*ajout d'une ombre pour une meilleur lisibilité*/
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    color: #E5DF3A;
 }
 /*----------------FOOTER-------------------*/
 footer {
@@ -818,7 +823,7 @@ footer p {
     }
 }
 
-/* -------Media querydu Main neutre------- */
+/* -------Media query du Main neutre------- */
 
 @media (min-width: 800px) {
     .img-neutre-m {
@@ -1071,6 +1076,7 @@ main.neutre {
 h2.neutre { /* titre neutre*/
     text-align: center;
     color:#E5DF3A;
+    font-weight: bold;
     
     position: relative;
     top:20px;
@@ -1090,9 +1096,18 @@ h2 + p.neutre {
     left:10%;
 }
 
+section + p.neutre {
+    position: relative;
+    font-size:1.5em;
+    width:80%;
+    left:10%;
+    bottom:100px;
+}
+
 h3.neutre{
     text-align: center;
     text-transform:uppercase;
+    font-weight: bold;
 }
 
 
@@ -1111,7 +1126,6 @@ h3.neutre{
     right:5%;
     min-width: 300px;
     max-width:1200px;
-    padding-left: 5%;
     
     display:flex;
     align-items: center;
@@ -1128,7 +1142,6 @@ h3.neutre{
     right:5%;
     min-width: 300px;
     max-width:1200px;
-    padding-left: 5%;
 
     display:flex;
     align-items: center;
