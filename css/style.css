@@ -529,10 +529,10 @@ footer p {
     width: 100%;
     background-color: #FE4239;
     margin: 0px 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     color: #fff;
-    height: 400px;
+    height: 411px;
 }
 .corpNefaste article h3{
     margin-top: 0px;
@@ -930,9 +930,31 @@ footer.neutre{
     }
 }
 
+@media (max-width: 982px){
+    .mainNefaste .corpNefaste article img{
+        width: 100%;
+        float: none;
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-bottom: 30px;
+    }
+    .mainNefaste .corpNefaste article h3{
+        text-align: center;
+    }
+    .mainNefaste .corpNefaste article {
+        height: 700px;
+    }
+}
+
 @media (max-width: 905px) {
     .mainAcceuil .sectionTab {
         top: 300px;
+    }
+}
+
+@media (max-width: 890px) {
+    .mainNefaste .corpNefaste article {
+        height: 650px;
     }
 }
 
@@ -955,7 +977,7 @@ footer.neutre{
 
 @media (max-width: 381px) {
     .mainAcceuil {
-        height: 900px;
+        height: 1000px;
     }
     .mainNefaste .hautpageNefaste img{
         width: 100px;
@@ -964,7 +986,7 @@ footer.neutre{
 
 @media (max-width: 280px) {
     .mainAcceuil {
-        height: 1100px;
+        height: 1200px;
     }
     .carteNefaste p{
         font-size: 0.8em;
