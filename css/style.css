@@ -545,38 +545,10 @@ footer p {
 
 /* -----------PARTIE NEUTRE---------------*/
 
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397) ;
-    position: relative;
-    border:0;
-}
 
 .zoom:hover {
     transform: scale(1.01);
 }
-
-/* --------Fond svg page neutre-------- */
-/* Fond */
-.Fond-middle {
-    position:relative;
-    width:100%;
-}
-
-
-#fond-middle-g {
-    top:100px;
-}
-
-#fond-middle-m {
-    top:150px;
-}
-
-#fond-middle-s {
-    top:150px;
-}
-
 
 
 /* ------Main neutre--------*/
@@ -601,8 +573,8 @@ h2.neutre { /* titre neutre*/
 
 p.neutre {
     color:black;
-    
     position: relative;
+    padding:2% 10%;
 
 }
 
@@ -627,47 +599,60 @@ h3.neutre{
 }
 
 
-/* card neutre */
-.card-img {
+.div-img {
     width:auto;
+    padding: 0 %;
 }
 
-
-#card-1-neutre {
-    width:90%;
-    position:relative;
-    left:5%;
-    right:5%;
-    min-width: 300px;
-    max-width:1200px;
-    
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#card-2-neutre {
-    width:90%;
-    position:relative;
-    top:100px;
-    left:5%;
-    right:5%;
-    min-width: 300px;
-    max-width:1200px;
+.div-neutre{
+    width:100%;
+    height:auto;
+    background-color: #E5DF3A;
 
     display:flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: center;
+    padding: 50px;
+}
+
+#Fond-neutre-top {
+    transform:rotate(180deg)translateY(-2px);
+    width:100%;
+    margin-top: 50px;
+}
+
+#Fond-neutre-bottom {
+    width:100%;
+    margin-bottom: 50px;
 }
 
 
-
+#div2-neutre{
+    background-color: #fff;
+}
 /* footer neutre */
+#Fond-neutre-footer{
+    transform: rotate(180deg)translateY(-2px);
+    width:100%;
+}
 
 footer.neutre{
+    background-color:#E5DF3A ;
     
+    height:10%;
+    max-height: 100px;
+    min-height: 40px;
+    margin-top:0;
+}
+
+footer.neutre p {
     color:black;
-    margin-top: 200px;
+}
+
+footer.neutre img {
+    margin-bottom: 3%;
+    margin-left: 3%;
+    max-width: 50px;
 }
 
 /*--------------------------------------Media query---------------------------*/
@@ -1014,19 +999,10 @@ footer.neutre{
     article.neutre{
         width:65%;
     }
-    h2.neutre{
-    font-size:3em;
-    }
-
-    #card-1-neutre {
+    .div-neutre {
         flex-direction: row;
         
         height:auto;
-        
-    }
-
-    #card-2-neutre {
-        flex-direction:row;
         
     }
 }
@@ -1049,12 +1025,8 @@ footer.neutre{
     h2.neutre{
         font-size:2.8em;
     }
-    #card-1-neutre {
+    .div-neutre {
         flex-direction: column;
-    }
-
-    #card-2-neutre {
-        flex-direction: column
     }
 }
 
@@ -1075,25 +1047,12 @@ footer.neutre{
     h2.neutre{
         font-size:2.4em;
     }
-    #card-1-neutre {
-        flex-direction: column;
-    }
-    #card-2-neutre {
+    .div-neutre {
         flex-direction: column;
     }
 }
-/*---- Media query fond neutre/ police----*/
+/*---- Media query police----*/
 @media (min-width: 1000px) {
-    #fond-middle-m {
-        display:none;
-    }
-    #fond-middle-g {
-        display:block;
-    }
-
-    #fond-middle-s {
-        display:none;
-    }
    p.neutre {
         font-size: 1.6em;
     }
@@ -1104,106 +1063,24 @@ footer.neutre{
     h2.neutre {
     font-size: 4em;
     }
-
-    #card-1-neutre {
-        top:-410px;
-        left:8%;
-    }
-    #card-2-neutre {
-        left:8%;
-    }
 }
 
 @media (max-width: 1000px) and (min-width: 600px) {
-    #fond-middle-m {
-        display:block;
-    }
-    #fond-middle-g {
-        display:none;
-    }
-
-    #fond-middle-s {
-        display:none;
-    }
     p.neutre {
         font-size: 1.2em;
     }
     h2.neutre {
         font-size: 3em;
     }
-    #card-1-neutre {
-        top:-300px;
-    }
 }
 
 @media (max-width: 600px) {
-    #fond-middle-m {
-        display:none;
-    }
-    #fond-middle-g {
-        display:none;
-    }
-
-    #fond-middle-s {
-        display:block;
-    }
     p.neutre {
         font-size: 1.2em;
     }
 
     h2.neutre {
         font-size: 2.5em;
-    }
-    #card-1-neutre {
-        top:-350px;
-    }
-}
-
-@media (min-width: 1000px) {
-    #footer-neutre-m {
-        display:none;
-    }
-    #footer-neutre-g {
-        display:block;
-    }
-
-    #footer-neutre-s {
-        display:none;
-    }
-    footer.neutre{
-    height:80px;
-    }
-}
-
-@media (max-width: 1000px) and (min-width: 585px) {
-    #footer-neutre-m {
-        display:block;
-    }
-    #footer-neutre-g {
-        display:none;
-    }
-
-    #footer-neutre-s {
-        display:none;
-    }
-    footer.neutre{
-        height:70px;
-    }
-}
-
-@media (max-width: 585px) {
-    #footer-neutre-m {
-        display:none;
-    }
-    #footer-neutre-g {
-        display:none;
-    }
-
-    #footer-neutre-s {
-        display:block;
-    }
-    footer.neutre{
-        height:60px;
     }
 }
 
