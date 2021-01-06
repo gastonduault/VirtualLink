@@ -475,7 +475,7 @@ footer p {
 
 /*------------------MAIN-NEFASTE------------------------*/
 .mainNefaste {
-    height: 10000px;
+    height: auto;
     margin-top: 100px;
     width: 100%;
 }
@@ -525,7 +525,7 @@ footer p {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
-.corpNefaste article{
+.corpNefaste .article1{
     width: 100%;
     background-color: #FE4239;
     margin: 0px 0px;
@@ -534,14 +534,33 @@ footer p {
     color: #fff;
     height: 411px;
 }
-.corpNefaste article h3{
+.corpNefaste .article1 h3{
     margin-top: 0px;
     text-align: left;
 }
-.corpNefaste article img{
+.corpNefaste .article1 img{
     float: right;
 }
-
+.corpNefaste .article2,
+.corpNefaste .article3{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.corpNefaste .titre-art{
+      padding-left: 60px;
+      margin-top: 60px;
+      padding-bottom: 10px;
+}
+.corpNefaste .article2 img{
+    margin-right: 30px;
+}
+.corpNefaste .article3 img {
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
 
 /* -----------PARTIE NEUTRE---------------*/
 
@@ -868,7 +887,6 @@ footer.neutre img {
     }
 }
 
-
 @media (min-width: 700px) {
     footer p {
         font-size: 1em;
@@ -916,17 +934,17 @@ footer.neutre img {
 }
 
 @media (max-width: 982px){
-    .mainNefaste .corpNefaste article img{
+    .mainNefaste .corpNefaste .article1 img{
         width: 100%;
         float: none;
         margin-right: 1%;
         margin-left: 1%;
         margin-bottom: 30px;
     }
-    .mainNefaste .corpNefaste article h3{
+    .mainNefaste .corpNefaste .article1 h3{
         text-align: center;
     }
-    .mainNefaste .corpNefaste article {
+    .mainNefaste .corpNefaste .article1 {
         height: 700px;
     }
 }
@@ -938,11 +956,16 @@ footer.neutre img {
 }
 
 @media (max-width: 890px) {
-    .mainNefaste .corpNefaste article {
+    .mainNefaste .corpNefaste .article1 {
         height: 650px;
     }
 }
-
+@media (max-width: 500px){
+    .mainNefaste .corpNefaste .article2 img,
+    .mainNefaste .corpNefaste .article3 img{
+        width: 25%;
+    }
+}
 @media (max-width: 530px) {
     .mainAcceuil .sectionTab article {
         width: 80%;
@@ -959,7 +982,21 @@ footer.neutre img {
         height: 800px;
     }
 }
-
+@media (max-width: 420px) {
+    .mainNefaste .corpNefaste .article2,
+    .mainNefaste .corpNefaste .article3{
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px;
+    }
+    .corpNefaste .article2 img,
+    .corpNefaste .article3 img{
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+}
 @media (max-width: 381px) {
     .mainAcceuil {
         height: 1000px;
