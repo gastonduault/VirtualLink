@@ -249,8 +249,7 @@ header .logo {
     font-family: Quicksand;
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 50px;
+    padding-top: 50px;
     font-size: 0.8em;
 }
 
@@ -261,19 +260,13 @@ header .logo {
     z-index: 1;
     padding-right: 20%;
     padding-left: 1%;
-    font-size: 0.6em;
-    position: absolute;
-    top: 100px;
 }
 
 .fondmainaccueil {
     width: 100%;
-    position: absolute;
-    top: 200px;
 }
 
 .margeTel {
-    height: 200px;
     background-color: #215D83;
 }
 
@@ -767,10 +760,6 @@ footer.neutre img {
 /* MEDIA QUERY PARTIE BENEFIQUE */
 
 @media (min-width: 550px) {
-    .mainAcceuil .intro {
-        font-size: 0.9em;
-    }
-
     .mainAcceuil h2 {
         font-size: 1.1em;
     }
@@ -861,10 +850,6 @@ footer.neutre img {
         transition: all 250ms;
     }
 
-    .fondmainaccueil {
-        width: 100%;
-        top: 50px;
-    }
 
     .margeTel {
         height: 0px;
@@ -886,7 +871,6 @@ footer.neutre img {
         top: 135px;
         padding-left: 2%;
         padding-right: 40%;
-        font-size: 1.3em;
     }
 }
 
@@ -897,20 +881,20 @@ footer.neutre img {
     }
 }
 
-@media (min-width: 1390px) {
+@media (max-width: 1390px) {
     .earth {
         right: 9%;
         top: 17%;
     }
 }
 
-@media (min-width: 1410px) {
+@media (max-width: 1410px) {
     .earth {
         top: 18%;
     }
 }
 
-@media (min-width: 1550px) {
+@media (max-width: 1550px) {
     .earth {
         top: 20%;
         right: 0%;
@@ -918,14 +902,6 @@ footer.neutre img {
 }
 
 @media (min-width: 200px) {
-    .mainAcceuil .intro {
-        font-size: 0.7em;
-    }
-
-    .mainAcceuil h2 {
-        font-size: 0.7em;
-    }
-
     .earth {
         top: 25%;
         right: 5%;
@@ -939,10 +915,6 @@ footer.neutre img {
 }
 
 @media (min-width: 450px) {
-    .mainAcceuil .intro {
-        font-size: 0.8em;
-    }
-
     .mainAcceuil h2 {
         font-size: 1em;
     }
@@ -954,7 +926,7 @@ footer.neutre img {
     }
 }
 
-@media (min-width: 750px) {
+@media (max-width: 750px) {
     .mainAcceuil .intro {
         font-size: 1.1em;
     }
