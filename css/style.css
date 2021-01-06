@@ -80,6 +80,7 @@ header .logo {
     float: left;
 }
 
+/* Icon du menu burger */
 .burger {
     width: 42px;
     height: 24px;
@@ -138,7 +139,9 @@ header .logo {
 
 .burger.active+nav {
     width: calc(40% - 50px);
+    min-width: 170px;
 }
+/* Icon du menu burger */
 
 .headerSmartphone nav {
     position: absolute;
@@ -152,8 +155,9 @@ header .logo {
 }
 
 .headerSmartphone li {
-    list-style: none;
+    list-style-image: url(../images/puce.png);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .headerSmartphone li:nth-child(1) {
@@ -169,16 +173,22 @@ header .logo {
 .animation-highlight::after {
     background-color: #ffffff;
     content: '';
-    width: 0;
-    height: 1%;
-    /*position:absolute;*/
+    width: 85%;
+    height: 1px;
+    position:absolute;
     z-index: -1;
-    bottom: -1px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     transition: all 250ms;
 }
+.animation-highlight:hover::after {
+    height: 83%;
+    width: 105%;
+    border-radius: 5px;
+}
 
+/* Couleur des polices intérieur */
 .btn1:hover {
     color: #36A761;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
@@ -194,11 +204,7 @@ header .logo {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 }
 
-.animation-highlight:hover::after {
-    height: 115%;
-    width: 105%;
-    border-radius: 5px;
-}
+
 
 /* ANIMATION NAV SELECTION */
 
@@ -799,13 +805,14 @@ footer.neutre img {
     }
 }
 
-@media (min-width: 935px) {
+@media (min-width: 800px) {
     .headerDesktop {
         display: inline-flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        padding-left: 7%;
+        padding-left: 68px;
+        align-items: center;
     }
 
     .headerSmartphone {
@@ -814,8 +821,9 @@ footer.neutre img {
 
     .headerDesktop a h1 {
         font-size: 36px;
-        width: 500px;
         text-transform: uppercase;
+        margin-bottom: 0px;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     }
 
     .headerDesktop nav {
@@ -836,20 +844,6 @@ footer.neutre img {
         position: relative;
         z-index: 0;
     }
-
-    .animation-highlight::after {
-        background-color: #ffffff;
-        content: '';
-        width: 0;
-        height: 1%;
-        position: absolute;
-        z-index: -1;
-        bottom: -1px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: all 250ms;
-    }
-
 
     .margeTel {
         height: 0px;
