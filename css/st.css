@@ -13,13 +13,14 @@
 }
 
 body {
-    margin:0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
 
 main {
     font-family: Quicksand;
 }
+
 /*----------------HEADER--------------------*/
 header {
     position: fixed;
@@ -34,15 +35,16 @@ header {
     align-items: center;
     z-index: 2;
 }
+
 /* Les couleur pour le header */
 .headerAccueil,
-.headerAccueil .headerSmartphone nav{
+.headerAccueil .headerSmartphone nav {
     background-color: #215D83;
 }
 
 header.neutre,
 header.neutre .headerSmartphone nav {
-    background-color:#E5DF3A;
+    background-color: #E5DF3A;
 }
 
 .headerNefaste,
@@ -51,9 +53,10 @@ header.neutre .headerSmartphone nav {
 }
 
 .headerBenefique,
-.headerBenefique .headerSmartphone nav{
+.headerBenefique .headerSmartphone nav {
     background-color: #36A761;
 }
+
 /* Les couleur pour le header */
 header.neutre a.neutre:link,
 header.neutre a.neutre:visited {
@@ -161,6 +164,7 @@ header .logo {
 .headerSmartphone li:nth-child(3) {
     margin-top: 75px;
 }
+
 /* ANIMATION NAV SELECTION */
 .animation-highlight::after {
     background-color: #ffffff;
@@ -195,6 +199,7 @@ header .logo {
     width: 105%;
     border-radius: 5px;
 }
+
 /* ANIMATION NAV SELECTION */
 
 /*----------------MAIN-Accueil---------------------*/
@@ -315,16 +320,18 @@ h3 {
 .negatif {
     color: #FE4239;
 }
+
 .titre_neutre {
     color: #E5DF3A;
 }
 
-.mainAcceuil a{
+.mainAcceuil a {
     text-decoration: none;
     transform: scale(1);
     transition: 0.4s;
 }
-.mainAcceuil a:hover{
+
+.mainAcceuil a:hover {
     transform: scale(1.1);
     transition: 0.2s;
     box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
@@ -341,7 +348,7 @@ footer img:nth-child(2) {
     /*LOGO*/
     margin-bottom: 3%;
     margin-left: 3%;
-    max-width:50px;
+    max-width: 50px;
 }
 
 footer p {
@@ -358,15 +365,17 @@ footer p {
     bottom: 0px;
     z-index: -1;
 }
+
 /*------------------MAIN-BENEFIQUE------------------------*/
 
 /* MAIN PARTIE BENEFIQUE */
 .benefique-main {
     padding-top: 80px;
 }
+
 .benefique-main div section,
 .benefique-main section,
-.benefique-main p  {
+.benefique-main p {
     /* Centrer le bloc et évité qu'il s'étire de trop */
     max-width: 1100px;
     margin-left: auto;
@@ -382,11 +391,13 @@ footer p {
     font-size: 48px;
     padding-right: 2.5%;
 }
-.benefique-main .image section h3{
+
+.benefique-main .image section h3 {
     /* Pour la police blanche sur le cadre vert */
     color: #fff;
 }
-.benefique-main .image section div p{
+
+.benefique-main .image section div p {
     /* Pour la police blanche sur le cadre vert */
     color: #fff;
 }
@@ -398,11 +409,13 @@ footer p {
     font-family: Quicksand;
     padding-right: 2.5%;
 }
+
 .benefique-main section img {
     /* premiere image */
     width: 25%;
 }
-.benefique-main div section div img{
+
+.benefique-main div section div img {
     /* Les autres images */
     width: 20%;
     margin-left: 2.5%;
@@ -416,13 +429,18 @@ footer p {
     align-items: center;
 }
 
-.benefique-main .change-cote section div{ /* Change le cote de l'image */
+.benefique-main .change-cote section div {
+    /* Change le cote de l'image */
     flex-direction: row-reverse;
 }
-.benefique-main .change-cote section h3{ /* Aligne le titre */
+
+.benefique-main .change-cote section h3 {
+    /* Aligne le titre */
     padding-left: 2.5%;
 }
-.benefique-main .change-cote section div p{ /* Aligne le paragraphe */
+
+.benefique-main .change-cote section div p {
+    /* Aligne le paragraphe */
     padding-left: 2.5%;
     margin-left: 0%;
 }
@@ -463,22 +481,27 @@ footer p {
     justify-content: space-between;
     align-items: center;
 }
+
 /*La partie avec le bloc vert*/
-.benefique-main .image > img{
+.benefique-main .image>img {
     color: white;
     background-color: white;
     width: 100%;
     max-height: 100px;
 }
-.benefique-main .image>img{
+
+.benefique-main .image>img {
     margin-bottom: -7px;
 }
-.benefique-main .image div{
+
+.benefique-main .image div {
     background-color: #36A761;
 }
-.benefique-main .image div section h3{
+
+.benefique-main .image div section h3 {
     margin-top: 0px;
 }
+
 /*La partie avec le bloc vert*/
 
 /* MAIN PARTIE BENEFIQUE */
@@ -599,100 +622,102 @@ footer p {
 
 /* ------Main neutre--------*/
 main.neutre {
-    position:relative;
-    top:100px;
+    position: relative;
+    top: 100px;
     font-size: 0.2em;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 
 
-h2.neutre { /* titre neutre*/
+h2.neutre {
+    /* titre neutre*/
     text-align: center;
-    color:#E5DF3A;
+    color: #E5DF3A;
     font-weight: bold;
-    
+
     position: relative;
-    top:20px;
-    margin:80px 30px;
+    top: 20px;
+    margin: 80px 30px;
 }
 
 p.neutre {
-    color:black;
+    color: black;
     position: relative;
-    padding:2% 10%;
+    padding: 2% 10%;
 
 }
 
-h2 + p.neutre {
-    font-size:1.5em;
-    width:80%;
-    left:10%;
+h2+p.neutre {
+    font-size: 1.5em;
+    width: 80%;
+    left: 10%;
 }
 
-section + p.neutre {
+section+p.neutre {
     position: relative;
-    font-size:1.5em;
-    width:80%;
-    left:10%;
-    bottom:100px;
+    font-size: 1.5em;
+    width: 80%;
+    left: 10%;
+    bottom: 100px;
 }
 
-h3.neutre{
+h3.neutre {
     text-align: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
 
 .div-img {
-    width:auto;
+    width: auto;
     padding: 0%;
 }
 
-.div-neutre{
-    width:100%;
-    height:auto;
+.div-neutre {
+    width: 100%;
+    height: auto;
     background-color: #E5DF3A;
 
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
 }
 
 #Fond-neutre-top {
-    transform:rotate(180deg)translateY(-2px);
-    width:100%;
+    transform: rotate(180deg)translateY(-2px);
+    width: 100%;
     margin-top: 50px;
 }
 
 #Fond-neutre-bottom {
-    width:100%;
+    width: 100%;
     margin-bottom: 50px;
 }
 
 
-#div2-neutre{
+#div2-neutre {
     background-color: #fff;
 }
+
 /* footer neutre */
-#Fond-neutre-footer{
+#Fond-neutre-footer {
     transform: rotate(180deg)translateY(-2px);
-    width:100%;
+    width: 100%;
 }
 
-footer.neutre{
-    background-color:#E5DF3A ;
-    
-    height:10%;
+footer.neutre {
+    background-color: #E5DF3A;
+
+    height: 10%;
     max-height: 100px;
     min-height: 40px;
-    margin-top:0;
+    margin-top: 0;
 }
 
 footer.neutre p {
-    color:black;
+    color: black;
 }
 
 footer.neutre img {
@@ -705,7 +730,9 @@ footer.neutre img {
 
 /* MEDIA QUERY PARTIE BENEFIQUE */
 
-@media (max-width: 900px) { /* Media query pour le milieu format */
+@media (max-width: 900px) {
+
+    /* Media query pour le milieu format */
     .benefique-main section h2 {
         font-size: 60px;
     }
@@ -714,11 +741,15 @@ footer.neutre img {
         font-size: 35px;
     }
 
-    .benefique-main div section div p, .benefique-main p {
+    .benefique-main div section div p,
+    .benefique-main p {
         font-size: 21px;
     }
 }
-@media (max-width: 600px) { /* Media query pour le petit format */
+
+@media (max-width: 600px) {
+
+    /* Media query pour le petit format */
     .benefique-main section h2 {
         font-size: 31px;
     }
@@ -727,10 +758,12 @@ footer.neutre img {
         font-size: 27px;
     }
 
-    .benefique-main div section div p, .benefique-main p {
+    .benefique-main div section div p,
+    .benefique-main p {
         font-size: 12px;
     }
 }
+
 /* MEDIA QUERY PARTIE BENEFIQUE */
 
 @media (min-width: 550px) {
@@ -802,7 +835,7 @@ footer.neutre img {
         justify-content: space-around;
         font-size: 30px;
         text-transform: uppercase;
-        
+
     }
 
     .buttonheaderDesktop {
@@ -967,6 +1000,7 @@ footer.neutre img {
         top: 300px;
     }
 }
+
 @media (max-width: 530px) {
     .mainAcceuil .sectionTab article {
         width: 80%;
@@ -988,7 +1022,8 @@ footer.neutre img {
     .mainAcceuil {
         height: 1200px;
     }
-    .carteNefaste p{
+
+    .carteNefaste p {
         font-size: 0.8em;
     }
 }
@@ -998,44 +1033,50 @@ footer.neutre img {
 
 @media (min-width: 800px) {
     .img-neutre-m {
-        display:none;
+        display: none;
     }
+
     .img-neutre-g {
-        display:block;
+        display: block;
     }
 
     .img-neutre-s {
-        display:none;
+        display: none;
     }
-    article.neutre{
-        width:65%;
+
+    article.neutre {
+        width: 65%;
     }
+
     .div-neutre {
         flex-direction: row;
-        
-        height:auto;
-        
+
+        height: auto;
+
     }
 }
 
 @media (max-width: 800px) and (min-width: 585px) {
     .img-neutre-m {
-        display:block;
+        display: block;
     }
+
     .img-neutre-g {
-        display:none;
+        display: none;
     }
 
     .img-neutre-s {
-        display:none;
+        display: none;
     }
-    
-    article.neutre{
-        width:95%;
+
+    article.neutre {
+        width: 95%;
     }
-    h2.neutre{
-        font-size:2.8em;
+
+    h2.neutre {
+        font-size: 2.8em;
     }
+
     .div-neutre {
         flex-direction: column;
     }
@@ -1043,36 +1084,43 @@ footer.neutre img {
 
 @media (max-width: 585px) {
     .img-neutre-m {
-        display:none;
+        display: none;
     }
+
     .img-neutre-g {
-        display:none;
+        display: none;
     }
 
     .img-neutre-s {
-        display:block;
+        display: block;
     }
-    article.neutre{
-        width:95%;
+
+    article.neutre {
+        width: 95%;
     }
-    h2.neutre{
-        font-size:2.4em;
+
+    h2.neutre {
+        font-size: 2.4em;
     }
+
     .div-neutre {
         flex-direction: column;
     }
 }
+
 /*---- Media query police----*/
 @media (min-width: 1000px) {
-   p.neutre {
+    p.neutre {
         font-size: 1.6em;
     }
-    h3.neutre{
+
+    h3.neutre {
         font-size: 2.8em;
 
-    } 
+    }
+
     h2.neutre {
-    font-size: 4em;
+        font-size: 4em;
     }
 }
 
@@ -1080,6 +1128,7 @@ footer.neutre img {
     p.neutre {
         font-size: 1.2em;
     }
+
     h2.neutre {
         font-size: 3em;
     }
@@ -1110,7 +1159,7 @@ footer.neutre img {
         width: 100%;
     }
 
-    .mainNefaste .article1 h3{
+    .mainNefaste .article1 h3 {
         text-align: center;
     }
 
@@ -1118,6 +1167,7 @@ footer.neutre img {
         height: 800px;
         width: 100%;
     }
+
     .mainNefaste .corpNefaste .article1 {
         height: 730px;
     }
@@ -1128,32 +1178,39 @@ footer.neutre img {
         height: 700px;
     }
 }
+
 @media (max-width: 585px) {
     .mainNefaste .corpNefaste .article1 {
         height: 730px;
     }
 }
+
 @media (max-width: 537px) {
     .mainNefaste .corpNefaste .article1 {
         height: 760px;
     }
 }
+
 @media (max-width: 510px) {
     .mainNefaste .corpNefaste .article1 {
         height: 810px;
     }
 }
+
 @media (max-width: 500px) {
+
     .mainNefaste .corpNefaste .article2 img,
     .mainNefaste .corpNefaste .article3 img {
         width: 25%;
     }
 }
+
 @media (max-width: 470px) {
     .mainNefaste .corpNefaste .article1 {
         height: 850px;
     }
 }
+
 @media (max-width: 445px) {
     .mainNefaste .corpNefaste .article1 {
         height: 880px;
@@ -1165,6 +1222,7 @@ footer.neutre img {
         height: 910px;
     }
 }
+
 @media (max-width: 420px) {
 
     .mainNefaste .corpNefaste .article2,
@@ -1181,16 +1239,19 @@ footer.neutre img {
         margin-right: 30%;
         margin-left: 30%;
     }
-    .titre-art{
+
+    .titre-art {
         text-align: left;
         padding: 0px 0px;
         margin-left: 0px;
     }
 }
+
 @media (max-width: 410px) {
     .mainNefaste .corpNefaste .article1 {
         height: 950px;
     }
+
     .mainNefaste h2 {
         font-size: 1.7em;
     }
@@ -1203,6 +1264,7 @@ footer.neutre img {
         padding-left: 10px;
     }
 }
+
 @media (max-width: 381px) {
     .mainAcceuil {
         height: 1000px;
@@ -1212,27 +1274,32 @@ footer.neutre img {
         width: 100px;
     }
 }
+
 @media (max-width: 370px) {
     .mainNefaste .corpNefaste .article1 {
         height: 850px;
     }
-    .corpNefaste h3{
+
+    .corpNefaste h3 {
         font-size: 1em;
         text-align: center;
     }
 }
+
 @media (max-width: 330px) {
     .mainNefaste .corpNefaste .article1 {
         height: 890px;
         width: 100%;
     }
 }
+
 @media (max-width: 310px) {
     .mainNefaste .corpNefaste .article1 {
         height: 960px;
         width: 100%;
     }
 }
+
 @media (max-width: 280px) {
     .mainAcceuil {
         height: 1200px;
