@@ -315,11 +315,21 @@ h3 {
 .negatif {
     color: #FE4239;
 }
-
-.titre_neutre a { /*ajout d'une ombre pour une meilleur lisibilité*/
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+.titre_neutre {
     color: #E5DF3A;
 }
+
+.mainAcceuil a{
+    text-decoration: none;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.mainAcceuil a:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
+}
+
 /*----------------FOOTER-------------------*/
 footer {
     margin-top: 10%;
@@ -755,6 +765,7 @@ footer.neutre img {
         padding: 17px 10px;
         width: 300px;
         font-family: Quicksand;
+        height: 310px;
     }
 
     .mainAcceuil .sectionOrdi article p {
