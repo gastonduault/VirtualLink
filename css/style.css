@@ -567,6 +567,7 @@ footer p {
     padding-left: 60px;
     margin-top: 60px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 .corpNefaste .article2 img {
@@ -1084,43 +1085,75 @@ footer.neutre img {
 }
 
 /*---------------Nefaste----------------*/
-@media (max-width: 410px) {
-    .mainNefaste h2 {
-        font-size: 1.7em;
-    }
-}
-
-@media (max-width: 982px) {
+@media (max-width: 1333px) {
     .mainNefaste .corpNefaste .article1 img {
-        width: 100%;
+        width: 70%;
         float: none;
-        margin-right: 1%;
-        margin-left: 1%;
+        margin-right: 15%;
+        margin-left: 15%;
         margin-bottom: 30px;
     }
 
-    .mainNefaste .corpNefaste .article1 h3 {
+    .mainNefaste h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainNefaste .article1 h3{
         text-align: center;
     }
 
     .mainNefaste .corpNefaste .article1 {
-        height: 700px;
+        height: 800px;
+        width: 100%;
+    }
+    .mainNefaste .corpNefaste .article1 {
+        height: 730px;
     }
 }
 
 @media (max-width: 890px) {
     .mainNefaste .corpNefaste .article1 {
-        height: 650px;
+        height: 700px;
     }
 }
-
+@media (max-width: 585px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 730px;
+    }
+}
+@media (max-width: 537px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 760px;
+    }
+}
+@media (max-width: 510px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 810px;
+    }
+}
 @media (max-width: 500px) {
     .mainNefaste .corpNefaste .article2 img,
     .mainNefaste .corpNefaste .article3 img {
         width: 25%;
     }
 }
+@media (max-width: 470px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 850px;
+    }
+}
+@media (max-width: 445px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 880px;
+    }
+}
 
+@media (max-width: 425px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 910px;
+    }
+}
 @media (max-width: 420px) {
 
     .mainNefaste .corpNefaste .article2,
@@ -1137,8 +1170,28 @@ footer.neutre img {
         margin-right: 30%;
         margin-left: 30%;
     }
+    .titre-art{
+        text-align: left;
+        padding: 0px 0px;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 410px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 950px;
+    }
+    .mainNefaste h2 {
+        font-size: 1.7em;
+    }
 }
 
+@media (max-width: 390px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 800px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
 @media (max-width: 381px) {
     .mainAcceuil {
         height: 1000px;
@@ -1148,21 +1201,25 @@ footer.neutre img {
         width: 100px;
     }
 }
-@media (max-width: 420px) {
-
-    .mainNefaste .corpNefaste .article2,
-    .mainNefaste .corpNefaste .article3 {
-        display: block;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        padding: 15px;
+@media (max-width: 370px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 850px;
     }
-
-    .corpNefaste .article2 img,
-    .corpNefaste .article3 img {
-        margin-right: 30%;
-        margin-left: 30%;
+    .corpNefaste h3{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+@media (max-width: 330px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 890px;
+        width: 100%;
+    }
+}
+@media (max-width: 310px) {
+    .mainNefaste .corpNefaste .article1 {
+        height: 960px;
+        width: 100%;
     }
 }
 @media (max-width: 280px) {
