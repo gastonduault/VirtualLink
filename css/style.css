@@ -316,20 +316,23 @@ h3 {
 
 .positif {
     color: #36A761;
+    text-transform: uppercase;
 }
 
 .negatif {
     color: #FE4239;
+    text-transform: uppercase;
 }
 
 .titre_neutre {
     color: #E5DF3A;
+    text-transform: uppercase;
 }
 
 .mainAcceuil a {
     text-decoration: none;
     transform: scale(1);
-    transition: 0.4s;
+    transition: 0.2s ease-in-out;
 }
 
 .mainAcceuil a:hover {
@@ -830,6 +833,20 @@ footer.neutre img {
     }
 }
 
+@media (max-width: 805px){
+    .earth{
+        top: 45%;
+        right: 3%;
+    }
+}
+
+@media (max-width: 801px) {
+    .earth {
+        top: 47%;
+    }
+}
+
+
 @media (min-width: 800px) {
     .headerDesktop {
         display: inline-flex;
@@ -879,19 +896,18 @@ footer.neutre img {
     .mainAcceuil .sectionTab {
         margin-top: 120px;
     }
+    .earth {
+        top: 58%;
+    }
 }
 @media (max-width: 759px) {
-    .earth {
-        right: 3%;
-        top: 42%;
-    }
     .mainAcceuil .sectionTab {
         margin-top: 120px;
     }
 }
 @media (max-width: 692px) {
     .earth {
-        top: 45%;
+        top: 60%;
         width: 200px;
         height: 200px;
     }
@@ -901,12 +917,12 @@ footer.neutre img {
 }
 @media (max-width: 654px) {
     .earth {
-        top: 46%;
+        top: 62%;
     }
 }
 @media (max-width: 597px) {
     .earth {
-        top: 47%;
+        top: 64%;
     }
 
     .intro {
@@ -921,30 +937,27 @@ footer.neutre img {
 }
 @media (max-width: 550px){
     .earth{
-        top: 50%;
+        top: 66%;
     }
 }
 @media (max-width: 490px) {
     .earth {
-        top:55%;
+        top: 67%;
     }
 }
 @media (max-width: 467px) {
     .earth {
-        right: 4%;
-        top: 56%;
+        top: 70%;
     }
 }
-@media (max-width: 422px) {
+@media (max-width: 428px) {
     .earth {
-        right: 4%;
-        top: 57%;
+        top: 77%;
     }
 }
 @media (max-width: 416px) {
     .earth {
-        right: 4%;
-        top: 62%;
+        top: 80%;
     }
 }
 @media (min-width: 400px) {
@@ -954,29 +967,29 @@ footer.neutre img {
 }
 @media (max-width: 391px) {
     .earth {
-        top: 63%;
+        top: 85%;
     }
 }
 @media (max-width: 376px) {
     .earth {
-        top: 64%;
+        top: 87%;
         width: 150px;
         height: 150px;
     }
 }
 @media (max-width: 355px) {
     .earth {
-        top: 68%;
+        top: 87%;
     }
 }
 @media (max-width: 338px) {
     .earth {
-        top: 69%;
+        top: 93%;
     }
 }
 @media (max-width: 325px) {
     .earth {
-        top: 73%;
+        top: 95%;
     }
 }
 @media (min-width: 700px) {
