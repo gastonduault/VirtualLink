@@ -21,6 +21,11 @@ main {
     font-family: Quicksand;
 }
 
+.appear {
+    opacity: 0;
+}
+
+
 /*----------------HEADER--------------------*/
 header {
     position: fixed;
@@ -211,14 +216,14 @@ header .logo {
 /* ANIMATION NAV SELECTION */
 
 /*----------------MAIN-Accueil---------------------*/
+
+/* Animation terre */
 .earth {
     background-image: url(../images/v2.png);
     background-size: cover;
     border-radius: 50%;
     margin: auto;
     box-shadow: -30px -20px 0 0 rgba(0, 0, 0, .15) inset, -70px -30px 0 0 rgba(0, 0, 0, .1) inset, 5px 5px 0 0 rgba(255, 255, 255, .2) inset;
-    -webkit-animation: rotationEarth 5s infinite linear;
-    -moz-animation: rotationEarth 5s infinite linear;
     animation: rotationEarth 35s infinite linear;
     position: absolute;
     right: 7%;
@@ -226,17 +231,6 @@ header .logo {
     width: 300px;
     height: 300px;
 }
-
-@-webkit-keyframes rotationEarth {
-    from {
-        background-position: left center;
-    }
-
-    to {
-        background-position: -396px center;
-    }
-}
-
 @keyframes rotationEarth {
     from {
         background-position: left center;
@@ -246,6 +240,7 @@ header .logo {
         background-position: -396px center;
     }
 }
+/* Animation terre */
 
 .mainAcceuil h2 {
     color: #fff;
@@ -277,7 +272,7 @@ header .logo {
 .hautAccueil {
     background-color: #215D83;
 }
-
+/* Partie carte du main */
 .mainAcceuil .sectionOrdi {
     display: none;
 }
@@ -313,29 +308,30 @@ header .logo {
 h3 {
     margin-top: 7px;
 }
+/* Partie carte du main */
 
-.positif {
+.positif { /* Titre couleur nav */
     color: #36A761;
     text-transform: uppercase;
 }
 
-.negatif {
+.negatif { /* Titre couleur nav */
     color: #FE4239;
     text-transform: uppercase;
 }
 
-.titre_neutre {
+.titre_neutre { /* Titre couleur nav */
     color: #E5DF3A;
     text-transform: uppercase;
 }
 
-.mainAcceuil a {
+.mainAcceuil a { /* Animation pour les cartes */
     text-decoration: none;
     transform: scale(1);
     transition: 0.2s ease-in-out;
 }
 
-.mainAcceuil a:hover {
+.mainAcceuil a:hover { /* Animation pour les cartes */
     transform: scale(1.1);
     transition: 0.2s;
     box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
@@ -649,7 +645,7 @@ h2.neutre {
 p.neutre {
     color: black;
     position: relative;
-    padding: 2% 10%;
+    padding: 2% 2%;
 
 }
 
@@ -687,7 +683,7 @@ h3.neutre {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 50px;
 }
 
 #Fond-neutre-top {
@@ -731,7 +727,7 @@ footer.neutre img {
     max-width: 50px;
 }
 
-/*--------------------------------------Media query---------------------------*/
+/*--------------------------------------Media query NEUTRE---------------------------*/
 
 /* MEDIA QUERY PARTIE BENEFIQUE */
 
@@ -771,18 +767,8 @@ footer.neutre img {
 
 /* MEDIA QUERY PARTIE BENEFIQUE */
 
-@media (max-width:1110px){
-    .earth{
-        top: 35%;
-    }
-}
-@media (max-width: 970px){
-    .earth{
-        right: 6%;
-    }
-}
-
-@media (min-width: 945px) {
+/* MEDIA QUERY ACCUEIL */
+@media (min-width: 945px) { /* Media query pour les cartes version ordi */
     .mainAcceuil .sectionOrdi {
         width: 100%;
         margin-top: 150px;
@@ -790,7 +776,6 @@ footer.neutre img {
         flex-direction: row;
         justify-content: space-around;
     }
-
     .mainAcceuil .sectionOrdi article {
         display: block;
         flex-direction: column;
@@ -809,45 +794,35 @@ footer.neutre img {
         display: none;
     }
 }
-
-@media (max-width: 902px) {
-    .earth {
-        right: 5%;
-        top: 36%;
+@media (max-width: 787px){ /* Media query des cartes version tel */
+    .mainAcceuil .sectionTab{
+        margin-top: 80px;
     }
 }
-
-@media (max-width: 887px) {
-    .earth {
-        right: 5%;
-        top: 37%;
+@media (max-width: 762px) { /* Media query des cartes version tel */
+    .mainAcceuil .sectionTab {
+        margin-top: 120px;
     }
 }
-
-@media (max-width: 887px) {
-    .earth {
-        right: 4%;
-        top: 38%;
-        width: 250px;
-        height: 250px;
+@media (max-width: 759px) { /* Media query des cartes version tel */
+    .mainAcceuil .sectionTab {
+        margin-top: 120px;
     }
 }
-
-@media (max-width: 805px){
-    .earth{
-        top: 45%;
-        right: 3%;
+@media (min-width: 1630px) { /* Media query des cartes version Ordi */
+    .mainAcceuil .sectionOrdi {
+        top: 800px;
     }
 }
-
-@media (max-width: 801px) {
-    .earth {
-        top: 47%;
+@media (max-width: 530px) { /* Media query des cartes version tel */
+    .mainAcceuil .sectionTab article {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 20px;
     }
 }
-
-
-@media (min-width: 800px) {
+@media (min-width: 800px) { /* Media query header du passage de pc a tel  */
     .headerDesktop {
         display: inline-flex;
         flex-direction: row;
@@ -877,7 +852,7 @@ footer.neutre img {
 
     }
 
-    .buttonheaderDesktop {
+    .buttonheaderDesktop { /* Bouton nav header ordi */
         display: inline-block;
         color: #ffffff;
         transition: color 250ms;
@@ -887,22 +862,62 @@ footer.neutre img {
         z-index: 0;
     }
 }
-@media (max-width: 787px){
-    .mainAcceuil .sectionTab{
-        margin-top: 80px;
+@media (min-width: 597px) {
+    .intro { /* Page Texte début Accueil */
+        padding-right: 32%;
     }
 }
-@media (max-width: 762px) {
-    .mainAcceuil .sectionTab {
-        margin-top: 120px;
+@media (min-width: 400px) {
+    footer p {
+        font-size: 0.7em;
     }
+}
+@media (min-width: 700px) {
+    footer p {
+        font-size: 1em;
+    }
+}
+
+/* PLACEMENT DE LA TERRE */
+@media (max-width:1110px){
+    .earth{
+        top: 35%;
+    }
+}
+@media (max-width: 970px){
+    .earth{
+        right: 6%;
+    }
+}
+@media (max-width: 902px) {
     .earth {
-        top: 58%;
+        right: 5%;
+        top: 36%;
     }
 }
-@media (max-width: 759px) {
-    .mainAcceuil .sectionTab {
-        margin-top: 120px;
+@media (max-width: 887px) {
+    .earth {
+        right: 5%;
+        top: 37%;
+    }
+}
+@media (max-width: 887px) {
+    .earth {
+        right: 4%;
+        top: 38%;
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 805px){
+    .earth{
+        top: 45%;
+        right: 3%;
+    }
+}
+@media (max-width: 801px) {
+    .earth {
+        top: 47%;
     }
 }
 @media (max-width: 692px) {
@@ -911,28 +926,20 @@ footer.neutre img {
         width: 200px;
         height: 200px;
     }
-     .mainAcceuil .sectionTab {
-         margin-top: 100px;
-     }
-}
-@media (max-width: 654px) {
-    .earth {
-        top: 62%;
+
+    .mainAcceuil .sectionTab {
+        margin-top: 100px;
     }
 }
+
 @media (max-width: 597px) {
     .earth {
         top: 64%;
     }
 
     .intro {
+        /* Page Texte début Accueil */
         padding: 5px 5px;
-    }
-}
-
-@media (min-width: 597px) {
-    .intro {
-        padding-right: 32%;
     }
 }
 @media (max-width: 550px){
@@ -960,9 +967,38 @@ footer.neutre img {
         top: 80%;
     }
 }
-@media (min-width: 400px) {
-    footer p {
-        font-size: 0.7em;
+@media (max-width: 654px) {
+    .earth {
+        top: 62%;
+    }
+}
+@media (max-width: 550px) {
+    .earth {
+        top: 66%;
+    }
+}
+
+@media (max-width: 490px) {
+    .earth {
+        top: 67%;
+    }
+}
+
+@media (max-width: 467px) {
+    .earth {
+        top: 70%;
+    }
+}
+
+@media (max-width: 428px) {
+    .earth {
+        top: 77%;
+    }
+}
+
+@media (max-width: 416px) {
+    .earth {
+        top: 80%;
     }
 }
 @media (max-width: 391px) {
@@ -992,49 +1028,16 @@ footer.neutre img {
         top: 95%;
     }
 }
-@media (min-width: 700px) {
-    footer p {
-        font-size: 1em;
-    }
-}
-
-@media (min-width: 1630px) {
-    .mainAcceuil .sectionOrdi {
-        top: 800px;
-    }
-}
-
-
-@media (max-width: 530px) {
-    .mainAcceuil .sectionTab article {
-        width: 80%;
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 280px) {
-    .carteNefaste p {
-        font-size: 0.8em;
-    }
-}
-
+/* PLACEMENT DE LA TERRE */
 
 /* -------Media query du Main neutre------- */
 
 @media (min-width: 800px) {
-    .img-neutre-m {
-        display: none;
+    .img-neutre {
+        height:200px;
+        width:200px;
     }
 
-    .img-neutre-g {
-        display: block;
-    }
-
-    .img-neutre-s {
-        display: none;
-    }
 
     article.neutre {
         width: 65%;
@@ -1049,16 +1052,9 @@ footer.neutre img {
 }
 
 @media (max-width: 800px) and (min-width: 585px) {
-    .img-neutre-m {
-        display: block;
-    }
-
-    .img-neutre-g {
-        display: none;
-    }
-
-    .img-neutre-s {
-        display: none;
+    .img-neutre {
+        height:150px;
+        width:150px;
     }
 
     article.neutre {
@@ -1075,16 +1071,9 @@ footer.neutre img {
 }
 
 @media (max-width: 585px) {
-    .img-neutre-m {
-        display: none;
-    }
-
-    .img-neutre-g {
-        display: none;
-    }
-
-    .img-neutre-s {
-        display: block;
+    .img-neutre {
+        height:100px;
+        width:100px;
     }
 
     article.neutre {
@@ -1273,24 +1262,25 @@ footer.neutre img {
         text-align: center;
     }
 }
-
 @media (max-width: 330px) {
     .mainNefaste .corpNefaste .article1 {
         height: 890px;
         width: 100%;
     }
 }
-
 @media (max-width: 310px) {
     .mainNefaste .corpNefaste .article1 {
         height: 960px;
         width: 100%;
     }
 }
-
 @media (max-width: 280px) {
     .carteNefaste p {
         font-size: 0.8em;
     }
 }
-
+@media (max-width: 280px) {
+    .carteNefaste p {
+        font-size: 0.8em;
+    }
+}
