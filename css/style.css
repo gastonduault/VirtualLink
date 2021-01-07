@@ -770,7 +770,11 @@ footer.neutre img {
 
 /* MEDIA QUERY PARTIE BENEFIQUE */
 
-
+@media (max-width:1110px){
+    .earth{
+        top: 35%;
+    }
+}
 @media (max-width: 970px){
     .earth{
         right: 6%;
@@ -808,21 +812,21 @@ footer.neutre img {
 @media (max-width: 902px) {
     .earth {
         right: 5%;
-        top: 22%;
+        top: 36%;
     }
 }
 
 @media (max-width: 887px) {
     .earth {
         right: 5%;
-        top: 24%;
+        top: 37%;
     }
 }
 
 @media (max-width: 887px) {
     .earth {
         right: 4%;
-        top: 25%;
+        top: 38%;
         width: 250px;
         height: 250px;
     }
@@ -880,17 +884,16 @@ footer.neutre img {
 }
 @media (max-width: 759px) {
     .earth {
-        right: 4%;
-        top: 30%;
+        right: 3%;
+        top: 42%;
     }
     .mainAcceuil .sectionTab {
         margin-top: 120px;
     }
 }
-@media (max-width: 683px) {
+@media (max-width: 692px) {
     .earth {
-        right: 4%;
-        top: 30%;
+        top: 45%;
         width: 200px;
         height: 200px;
     }
@@ -900,32 +903,50 @@ footer.neutre img {
 }
 @media (max-width: 654px) {
     .earth {
-        right: 4%;
-        top: 36%;
+        top: 46%;
     }
 }
-@media (max-width: 542px) {
+@media (max-width: 597px) {
     .earth {
-        right: 4%;
-        top: 38%;
+        top: 47%;
+    }
+
+    .intro {
+        padding: 5px 5px;
+    }
+}
+
+@media (min-width: 597px) {
+    .intro {
+        padding-right: 32%;
+    }
+}
+@media (max-width: 550px){
+    .earth{
+        top: 50%;
     }
 }
 @media (max-width: 490px) {
     .earth {
-        right: 4%;
-        top: 41%;
+        top:55%;
     }
 }
 @media (max-width: 467px) {
     .earth {
         right: 4%;
-        top: 45%;
+        top: 56%;
     }
 }
 @media (max-width: 422px) {
     .earth {
         right: 4%;
-        top: 50%;
+        top: 57%;
+    }
+}
+@media (max-width: 416px) {
+    .earth {
+        right: 4%;
+        top: 62%;
     }
 }
 @media (min-width: 400px) {
@@ -933,27 +954,31 @@ footer.neutre img {
         font-size: 0.7em;
     }
 }
-@media (max-width: 388px) {
+@media (max-width: 391px) {
     .earth {
-        top: 54%;
+        top: 63%;
     }
 }
 @media (max-width: 376px) {
     .earth {
-        top: 44%;
-        right: 3%;
+        top: 64%;
         width: 150px;
         height: 150px;
     }
 }
-@media (min-width:376px){
-    .intro{
-        padding-right: 32%;
+@media (max-width: 355px) {
+    .earth {
+        top: 68%;
     }
 }
-@media (max-width: 332px) {
+@media (max-width: 338px) {
     .earth {
-        top: 49%;
+        top: 69%;
+    }
+}
+@media (max-width: 325px) {
+    .earth {
+        top: 73%;
     }
 }
 @media (min-width: 700px) {
@@ -1257,3 +1282,4 @@ footer.neutre img {
         font-size: 0.8em;
     }
 }
+
