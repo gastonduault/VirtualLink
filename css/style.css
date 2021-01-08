@@ -272,43 +272,72 @@ header .logo {
 .hautAccueil {
     background-color: #215D83;
 }
-/* Partie carte du main */
-.mainAcceuil .sectionOrdi {
-    display: none;
-}
 
-.mainAcceuil article {
+/* Partie carte du main */
+
+
+.mainAcceuil .cartes { /*PLacement des cartes sur ordi*/
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.mainAcceuil .cartes article {
+    text-align: center;
+    padding: 7% 5%;
+    width: 300px;
+    font-family: Quicksand;
+    height: 310px;
+    /* Pour faire la forme de carte */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
     color: #000000;
 }
-
-.mainAcceuil .sectionTab {
-    width: 100%;
-    position: relative;
-    margin-top: 135px;
-    display: block;
-    flex-direction: column;
+.cartes a article div img{ /*Cache l'image pour le tel*/
+    display: none;
 }
 
-.mainAcceuil .sectionTab article {
-    text-align: left;
-    width: 60%;
-    margin-bottom: 2%;
-    padding: 15px 15px;
-    margin-right: 20%;
-    margin-left: 20%;
+.mainAcceuil .cartes article p { /*Police du texte des cartes*/
+    font-size: 17px;
 }
 
-.mainAcceuil .sectionTab article img {
-    float: right;
-}
+@media (max-width: 1000px) {
+    .mainAcceuil .cartes { /* position des cartes en colonnes*/
+        flex-direction: column;
+    }
+    .cartes a article>img{ /*Cache image version ordi*/
+        display: none;
+    }
+    .cartes a article div img{ /*Image version tel*/
+        display: flex;
+    }
+    .mainAcceuil .cartes article{ /*Adapter les cartes*/
+        text-align: left;
+        width: 60%;
+        margin-bottom: 5%;
+        padding: 15px 15px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+        height: auto;
+    }
+    .cartes a article div img{ /*Position de l'image dans les cartes*/ 
+        position: relative;
+        float: right;
 
-h3 {
-    margin-top: 7px;
+    }
+    .mainAcceuil .cartes img { /*Taille de l'image version tel */ 
+        width: 60px;
+        height: 60px;
+    }
+    }
+@media (max-width: 1000px) { /* Cartes + grandes en petit format*/
+    .mainAcceuil .cartes article{
+        width: 80%;
+    }
 }
-/* Partie carte du main */
 
 .positif { /* Titre couleur nav */
     color: #36A761;
@@ -334,14 +363,20 @@ h3 {
 .mainAcceuil a:hover { /* Animation pour les cartes */
     transform: scale(1.1);
     transition: 0.2s;
-    box-shadow: 10px 15px 20px 0px rgba(0, 0, 0, 0.397);
+    
 }
+
+/* Partie carte du main */
+
 
 /*----------------FOOTER-------------------*/
 footer {
-    margin-top: 30%;
+    margin-top: 20%;
     position: relative;
     width: 100%;
+}
+.mainAcceuil + footer { /* Pour coller un peu plus les cartes vers le footer */
+    margin-top: 20%;
 }
 
 footer img:nth-child(2) {
@@ -615,21 +650,7 @@ footer p {
 
 /* -----------PARTIE NEUTRE---------------*/
 
-
-.zoom:hover {
-    transform: scale(1.01);
-}
-
-
 /* ------Main neutre--------*/
-main.neutre {
-    position: relative;
-    top: 100px;
-    font-size: 0.2em;
-    text-decoration: none;
-}
-
-
 
 h2.neutre {
     /* titre neutre*/
@@ -768,60 +789,6 @@ footer.neutre img {
 /* MEDIA QUERY PARTIE BENEFIQUE */
 
 /* MEDIA QUERY ACCUEIL */
-@media (min-width: 945px) { /* Media query pour les cartes version ordi */
-    .mainAcceuil .sectionOrdi {
-        width: 100%;
-        margin-top: 150px;
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .mainAcceuil .sectionOrdi article {
-        display: block;
-        flex-direction: column;
-        text-align: center;
-        padding: 17px 10px;
-        width: 300px;
-        font-family: Quicksand;
-        height: 310px;
-    }
-
-    .mainAcceuil .sectionOrdi article p {
-        font-size: 1.2em;
-    }
-
-    .mainAcceuil .sectionTab {
-        display: none;
-    }
-}
-@media (max-width: 787px){ /* Media query des cartes version tel */
-    .mainAcceuil .sectionTab{
-        margin-top: 80px;
-    }
-}
-@media (max-width: 762px) { /* Media query des cartes version tel */
-    .mainAcceuil .sectionTab {
-        margin-top: 120px;
-    }
-}
-@media (max-width: 759px) { /* Media query des cartes version tel */
-    .mainAcceuil .sectionTab {
-        margin-top: 120px;
-    }
-}
-@media (min-width: 1630px) { /* Media query des cartes version Ordi */
-    .mainAcceuil .sectionOrdi {
-        top: 800px;
-    }
-}
-@media (max-width: 530px) { /* Media query des cartes version tel */
-    .mainAcceuil .sectionTab article {
-        width: 80%;
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-bottom: 20px;
-    }
-}
 @media (min-width: 800px) { /* Media query header du passage de pc a tel  */
     .headerDesktop {
         display: inline-flex;
