@@ -222,14 +222,17 @@ header .logo {
     background-image: url(../images/v2.png);
     background-size: cover;
     border-radius: 50%;
-    margin: auto;
     box-shadow: -30px -20px 0 0 rgba(0, 0, 0, .15) inset, -70px -30px 0 0 rgba(0, 0, 0, .1) inset, 5px 5px 0 0 rgba(255, 255, 255, .2) inset;
     animation: rotationEarth 35s infinite linear;
-    position: absolute;
-    right: 7%;
-    top: 20%;
-    width: 300px;
-    height: 300px;
+    position: relative;
+    left: 73vw;
+    top:-90px;
+    width: 15vw;
+    height:15vw;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 300px;
 }
 @keyframes rotationEarth {
     from {
@@ -241,6 +244,12 @@ header .logo {
     }
 }
 /* Animation terre */
+
+div#main-planète-fond {
+    width:100%;
+    height: auto;
+    transform: translateY(-1px);
+}
 
 .mainAcceuil h2 {
     color: #fff;
@@ -278,7 +287,6 @@ header .logo {
 
 .mainAcceuil .cartes { /*PLacement des cartes sur ordi*/
     width: 100%;
-    margin-top: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -845,156 +853,6 @@ footer.neutre img {
     }
 }
 
-/* PLACEMENT DE LA TERRE */
-@media (max-width:1110px){
-    .earth{
-        top: 35%;
-    }
-}
-@media (max-width: 970px){
-    .earth{
-        right: 6%;
-    }
-}
-@media (max-width: 902px) {
-    .earth {
-        right: 5%;
-        top: 36%;
-    }
-}
-@media (max-width: 887px) {
-    .earth {
-        right: 5%;
-        top: 37%;
-    }
-}
-@media (max-width: 887px) {
-    .earth {
-        right: 4%;
-        top: 38%;
-        width: 250px;
-        height: 250px;
-    }
-}
-@media (max-width: 805px){
-    .earth{
-        top: 45%;
-        right: 3%;
-    }
-}
-@media (max-width: 801px) {
-    .earth {
-        top: 47%;
-    }
-}
-@media (max-width: 692px) {
-    .earth {
-        top: 60%;
-        width: 200px;
-        height: 200px;
-    }
-
-    .mainAcceuil .sectionTab {
-        margin-top: 100px;
-    }
-}
-
-@media (max-width: 597px) {
-    .earth {
-        top: 64%;
-    }
-
-    .intro {
-        /* Page Texte début Accueil */
-        padding: 5px 5px;
-    }
-}
-@media (max-width: 550px){
-    .earth{
-        top: 66%;
-    }
-}
-@media (max-width: 490px) {
-    .earth {
-        top: 67%;
-    }
-}
-@media (max-width: 467px) {
-    .earth {
-        top: 70%;
-    }
-}
-@media (max-width: 428px) {
-    .earth {
-        top: 77%;
-    }
-}
-@media (max-width: 416px) {
-    .earth {
-        top: 80%;
-    }
-}
-@media (max-width: 654px) {
-    .earth {
-        top: 62%;
-    }
-}
-@media (max-width: 550px) {
-    .earth {
-        top: 66%;
-    }
-}
-
-@media (max-width: 490px) {
-    .earth {
-        top: 67%;
-    }
-}
-
-@media (max-width: 467px) {
-    .earth {
-        top: 70%;
-    }
-}
-
-@media (max-width: 428px) {
-    .earth {
-        top: 77%;
-    }
-}
-
-@media (max-width: 416px) {
-    .earth {
-        top: 80%;
-    }
-}
-@media (max-width: 391px) {
-    .earth {
-        top: 85%;
-    }
-}
-@media (max-width: 376px) {
-    .earth {
-        top: 87%;
-        width: 150px;
-        height: 150px;
-    }
-}
-@media (max-width: 355px) {
-    .earth {
-        top: 87%;
-    }
-}
-@media (max-width: 338px) {
-    .earth {
-        top: 93%;
-    }
-}
-@media (max-width: 325px) {
-    .earth {
-        top: 95%;
-    }
-}
 /* PLACEMENT DE LA TERRE */
 
 /* -------Media query du Main neutre------- */
