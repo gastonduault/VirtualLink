@@ -487,6 +487,74 @@ footer p {
         transform: none;
     }
 }
+
+/*Animation sticker*/
+.sticker {
+    width: 30vmin; /*Taille de l'image, c'est responsive*/
+    height: 30vmin;
+    margin-left: auto; /*Pour la presentation*/
+    margin-right: auto; /*Pour la presentation*/
+    /*transform-style: preserve-3d; /*Pour coller par 'en-dessous', si on enleve, colle 'par-dessus'*/
+    position: relative; /*On peut changer le positionnement*/ 
+    /*animation: angle 1s both; /*Pour donner un angle à l'image*/
+
+}
+
+.sticker::before,
+.sticker::after {
+    content: ''; /*Pour afficher le bloc*/
+    display: block;
+    position: absolute; /*Obligé*/
+    width: 100%; /*Pour que les deux blocs prennent entièrement la place du bloc parent*/
+    height: 100%;
+    background: center / cover url(../images/pouce-positif-benefique.svg);
+}
+
+div.sticker::before {
+    animation: cote-positif 4s both;
+}
+
+@keyframes cote-positif {
+    from {
+        clip-path: inset(0 80% 0 0);
+    }
+
+    50%,
+    to {
+        clip-path: inset(0 0% 0 0);
+    }
+}
+
+.sticker::after {
+    filter: brightness(0.2); /*Assombit le mirroir*/
+    transform: rotateY(-180deg); /*Pour avoir le mirroir*/
+    animation:  cote-negatif 4s both;
+
+}
+
+@keyframes cote-negatif {
+    from {
+        clip-path: inset(0 0 0 20%); /*Permet de définir où commence l'animation, il faut que les deux positif+negatif=100%*/
+        transform-origin: 20% 0;
+    }
+
+    50%,
+    to {
+        clip-path: inset(0 0 0 100%);
+        transform-origin: 100% 0;
+    }
+}
+
+@keyframes angle { /*On peut varier la taille de l'angle*/
+    from {
+        transform: rotate(-50deg);
+    }
+
+    to {
+        transform: rotate(-50deg);
+    }
+}
+/*Animation sticker*/ 
 .benefique-main div section div img {
     /* Les autres images */
     width: 20%;
