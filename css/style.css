@@ -259,7 +259,7 @@ div#main-planète-fond {
     width: 100%;
     padding-top: 50px;
     font-size: 1.5em;
-    animation: typewriter 1.5s steps(44) 1s 1 normal both,
+    animation: typewriter 2s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
     overflow: hidden;
     border-right: 2px solid #fff;
