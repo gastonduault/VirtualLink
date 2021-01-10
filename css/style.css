@@ -807,8 +807,11 @@ h2.neutre {
 p.neutre {
     color: black;
     position: relative;
-    padding: 2% 2%;
 
+}
+
+article.neutre {
+    padding:20px;
 }
 
 h2+p.neutre {
@@ -1163,7 +1166,6 @@ footer.neutre p {
 @media (max-width: 1000px) and (min-width: 600px) {
     p.neutre {
         font-size: 1.2em;
-        padding:2% 2%;
     }
 
     h2.neutre {
@@ -1177,7 +1179,6 @@ footer.neutre p {
 @media (max-width: 600px) {
     p.neutre {
         font-size: 1.2em;
-        padding:2% 2%;
     }
 
     h2.neutre {
