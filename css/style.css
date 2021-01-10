@@ -255,11 +255,18 @@ div#main-planète-fond {
     color: #fff;
     z-index: 1;
     font-family: Quicksand;
-    text-align: center;
+    text-align: left;
     width: 100%;
     padding-top: 50px;
     font-size: 1.5em;
+    animation: typewriter 1.5s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    padding-left: 2%;
 }
+
 
 .mainAcceuil .intro {
     color: #ffffff;
@@ -270,8 +277,49 @@ div#main-planète-fond {
     margin-bottom: 0%;
     padding-bottom: 50px;
     padding-top: 10px;
+    /*animation: typing 1.5s steps(82, end),blink-caret 1s step-end;*/
 }
 
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+/*@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ffffff;
+    }
+}*/
 .fondmainaccueil {
     width: 100%;
     margin-top: 0%;
@@ -981,6 +1029,13 @@ footer.neutre img {
 @media (max-width: 1000px) { /* Cartes + grandes en petit format*/
     .mainAcceuil .cartes article{
         width: 80%;
+    }
+}
+@media (max-width: 1013px){
+    .mainAcceuil h2{
+        animation: none;
+        text-align: center;
+        white-space: normal;
     }
 }
 /* PLACEMENT DE LA TERRE */

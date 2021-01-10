@@ -13,33 +13,37 @@
 </head>
 
 <body>
-    <header class="headerNefaste">
+    <header class="headerAccueil">
         <a href="index.html" class="logo">
-            <img src="images/logo-terre.svg" height="44" title="Logo domotique" alt="logo domotique">
+            <img src="images/logo-terre.svg" height="44" title="Logo domotique" alt="logo domotique" class="appear"
+                data-delai="500">
         </a>
 
         <div class="headerDesktop">
             <a href="index.html">
-                <h1>
+                <h1 class="appear" data-delai="700">
                     Virtual Link
                 </h1>
             </a>
             <nav>
-                <a href="benefique.html" class="animation-highlight btn1 buttonheaderDesktop">Benefique</a>
-                <a href="nefaste.html" class="animation-highlight btn2 buttonheaderDesktop">Nefaste</a>
-                <a href="page_neutre.html" class="animation-highlight btn3 buttonheaderDesktop">Bilan</a>
+                <a href="benefique.html" class="animation-highlight btn1 buttonheaderDesktop appear"
+                    data-delai="900">Benefique</a>
+                <a href="nefaste.html" class="animation-highlight btn2 buttonheaderDesktop appear"
+                    data-delai="1100">Nefaste</a>
+                <a href="page_neutre.html" class="animation-highlight btn3 buttonheaderDesktop appear"
+                    data-delai="1300">Bilan</a>
             </nav>
         </div>
 
-        <div class="headerSmartphone">
+        <div class="headerSmartphone" class="appear" data-delai="700">
             <div class="burger">
                 <span></span>
             </div>
             <nav>
                 <lu>
-                    <li><a href="benefique.html" class="btn1">Benefique</a></li>
-                    <li> <a href="nefaste.html" class="btn2">Nefaste</a></li>
-                    <li> <a href="page_neutre.html" class="btn3">Bilan</a></li>
+                    <li><a href="benefique.html">Benefique</a></li>
+                    <li><a href="nefaste.html">Nefaste</a></li>
+                    <li><a href="page_neutre.html">Bilan</a></li>
                 </lu>
             </nav>
         </div>
