@@ -397,7 +397,7 @@ footer {
     margin-top: 20%;
 }
 
-footer img:nth-child(2) {
+footer a img {
     /*LOGO*/
     max-width: 50px;
     position: absolute;
@@ -885,8 +885,7 @@ footer.neutre {
     background-color: #E5DF3A;
 
     height: 10%;
-    max-height: 100px;
-    min-height: 40px;
+    min-height: 90px;
     margin-top: 0;
 }
 
@@ -894,11 +893,6 @@ footer.neutre p {
     color: black;
 }
 
-footer.neutre img {
-    margin-bottom: 3%;
-    margin-left: 3%;
-    max-width: 50px;
-}
 
 /*--------------------------------------Media query NEUTRE---------------------------*/
 
