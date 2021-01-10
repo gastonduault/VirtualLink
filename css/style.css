@@ -32,13 +32,30 @@ header {
     top: 0;
     width: 100%;
     color: #fff;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
     font-family: Iconic;
     align-items: center;
     z-index: 2;
+}
+
+header>div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;;
+}
+
+
+header a h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    margin-left: 5px;
+    height: 50px;
 }
 
 /* Les couleur pour le header */
@@ -80,11 +97,11 @@ header a:visited {
 }
 
 header .logo {
-    position: absolute;
-    margin: 15px;
-    float: left;
+    margin: 3px;
 }
-
+header>a {
+    height: 50px;
+}
 /* Icon du menu burger */
 .burger {
     width: 42px;
@@ -96,15 +113,16 @@ header .logo {
 }
 
 .burger span {
-    width: 100%;
+    width: 42px;
     height: 4px;
     background-color: #ffffff;
     display: block;
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     transition: background-color 0.5s ease-in-out;
     border-radius: 15px 15px;
+    float: right;
 }
 
 .burger span::before,
@@ -939,22 +957,21 @@ footer.neutre p {
     .headerDesktop {
         display: inline-flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
         width: 100%;
-        padding-left: 68px;
+        padding-left: 40px;
         align-items: center;
+    }
+
+    .headerDesktop>a {
+        display: block;
     }
 
     .headerSmartphone {
         display: none;
     }
 
-    .headerDesktop a h1 {
-        font-size: 36px;
-        text-transform: uppercase;
-        margin-bottom: 0px;
-        text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-    }
+
 
     .headerDesktop nav {
         width: 500px;
@@ -1032,7 +1049,6 @@ footer.neutre p {
         white-space: normal;
     }
 }
-/* PLACEMENT DE LA TERRE */
 
 /* -------Media query du Main neutre------- */
 
