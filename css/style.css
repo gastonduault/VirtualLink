@@ -448,12 +448,14 @@ footer a p:hover,footer a img:hover{
 .benefique-main div section h3 {
     /*Les titres*/
     text-transform: uppercase;
-    padding-left: 25%;
+    margin-left: 30%;
     font-family: Iconic;
     font-size: 2.8em;
-    padding-right: 2.5%;
+    padding-right: 5%;
     margin-top: 5%;
+    text-align: left;
 }
+
 
 .benefique-main .image section h3 {
     /* Pour la police blanche sur le cadre vert */
@@ -470,12 +472,13 @@ footer a p:hover,footer a img:hover{
     text-align: justify;
     font-size: 1.6em;
     font-family: Quicksand;
-    padding-right: 2.5%;
+    padding-right: 5%;
 }
 
 .benefique-main section img {
     /* premiere image */
     width: 20%;
+    height: 20%;
     position: relative;
     z-index: 1;
 }
@@ -483,58 +486,12 @@ footer a p:hover,footer a img:hover{
     animation:  wizz 1s 1 ease-in-out;
 }
 
-@keyframes wizz{
-    0%{
-        transform: none;
-    }
-    20%{
-        transform: scale(1.2);
-    }
-    30%{
-        transform: rotate(-12deg) scale(1.2);
-    }
-    40%{
-        transform: rotate(15deg) scale(1.2);
-    }
-    50%{
-        transform: rotate(-10deg) scale(1.2);
-    }
-    60%{
-        transform: rotate(0deg) scale(1.2);
-    }
-    80%{
-        transform: scale(0.9);
-    }
-    90%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
-@keyframes petit-mouv{
-    0%{
-        transform: none;
-    }
-    25%{
-        transform: translateX(-20%) translateY(-20%) scale(0.8);
-    }
-    50%{
-        transform: translateX(-20%) translateY(5%) scale(1.01);
-    }
-    75%{
-        transform: translateX(5%) translateY(-10%) scale(0.9);
-    }
-    100%{
-        transform: none;
-    }
-}
 .benefique-main div section div img {
     /* Les autres images */
     width: 20%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    height:20%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .benefique-main div section div {
@@ -551,13 +508,15 @@ footer a p:hover,footer a img:hover{
 
 .benefique-main .change-cote section h3 {
     /* Aligne le titre */
-    padding-left: 2.5%;
+    padding-left: 5%;
+    margin-left: 0;
 }
 
 .benefique-main .change-cote section div p {
     /* Aligne le paragraphe */
-    padding-left: 2.5%;
+    padding-left: 5%;
     margin-left: 0%;
+    padding-right: 0;
 }
 
 .benefique-main>img {
@@ -577,7 +536,7 @@ footer a p:hover,footer a img:hover{
     font-family: Iconic;
     font-size: 4em;
     color: #36A761;
-    padding-left: 2.5%;
+    padding-left: 5%;
 }
 
 .benefique-main>p {
@@ -585,8 +544,8 @@ footer a p:hover,footer a img:hover{
     text-align: justify;
     font-size: 1.6em;
     font-family: Quicksand;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .benefique-main>section {
@@ -825,26 +784,78 @@ footer.neutre {
 footer.neutre p {
     color: black;
 }
+/*-----Key-frames--------*/
 
+@keyframes wizz{
+    0%{
+        transform: none;
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    30%{
+        transform: rotate(-12deg) scale(1.2);
+    }
+    40%{
+        transform: rotate(15deg) scale(1.2);
+    }
+    50%{
+        transform: rotate(-10deg) scale(1.2);
+    }
+    60%{
+        transform: rotate(0deg) scale(1.2);
+    }
+    80%{
+        transform: scale(0.9);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes petit-mouv{
+    0%{
+        transform: none;
+    }
+    25%{
+        transform: translateX(-20%) translateY(-20%) scale(0.8);
+    }
+    50%{
+        transform: translateX(-20%) translateY(5%) scale(1.01);
+    }
+    75%{
+        transform: translateX(5%) translateY(-10%) scale(0.9);
+    }
+    100%{
+        transform: none;
+    }
+}
 
 /*--------------------------------------Media query NEUTRE---------------------------*/
 
 /* MEDIA QUERY PARTIE BENEFIQUE */
-
+@media (min-width:1100px){ /*Pour aligner les titres grand écran*/
+    .benefique-main div section h3{
+        margin-left: calc(10% + 220px);
+    }
+}
 @media (max-width: 900px) {
 
     /* Media query pour le milieu format */
     .benefique-main section h2 {
-        font-size: 60px;
+        font-size: 4em;
     }
 
     .benefique-main div section h3 {
-        font-size: 35px;
+        font-size: 2.3em;
     }
 
     .benefique-main div section div p,
     .benefique-main p {
-        font-size: 21px;
+        font-size:  1.4em;
     }
 }
 
@@ -852,7 +863,7 @@ footer.neutre p {
 
     /* Media query pour le petit format */
     .benefique-main section h2 {
-        font-size: 31px;
+        font-size: 2.8em;
     }
 
     .benefique-main div section h3 {
@@ -861,7 +872,7 @@ footer.neutre p {
 
     .benefique-main div section div p,
     .benefique-main p {
-        font-size: 12px;
+        font-size: 0.9em;
     }
 }
 
