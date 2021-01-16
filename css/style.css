@@ -409,6 +409,12 @@ footer p {
     bottom: 0px;
     z-index: -1;
 }
+footer a p,footer a img{ /*Grandissement lors du click*/ 
+    transition: all 250ms;
+}
+footer a p:hover,footer a img:hover{
+    transform: scale(1.2);
+}
 /*------------------MAIN-COPYRIGHT------------------------*/
 .mainCopyright{
     margin-top: 70px;
