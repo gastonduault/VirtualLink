@@ -52,10 +52,10 @@ header>div:nth-child(1) {
 header a h1 {
     font-size: 36px;
     text-transform: uppercase;
-    margin-bottom: 0px;
+    margin-bottom: 3.5px;
+    margin-top: 3.5px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     margin-left: 5px;
-    height: 50px;
 }
 
 /* Les couleur pour le header */
@@ -409,6 +409,23 @@ footer p {
     bottom: 0px;
     z-index: -1;
 }
+/*------------------MAIN-COPYRIGHT------------------------*/
+.mainCopyright{
+    margin-top: 70px;
+    padding: 0px 2%;
+}
+.mainCopyright h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.mainCopyright h3{
+    text-align: center;
+    font-size: 24px;
+}
+.mainCopyright section a,.mainCopyright div{
+    text-align: center;
+}
 /*------------------MAIN-BENEFIQUE------------------------*/
 
 /* MAIN PARTIE BENEFIQUE */
@@ -457,9 +474,11 @@ footer p {
 .benefique-main section img {
     /* premiere image */
     width: 25%;
-    animation:  wizz 2s 1 ease-in-out;
     position: relative;
     z-index: 1;
+}
+.benefique-main img:active{
+    animation:  wizz 1s 1 ease-in-out;
 }
 
 @keyframes wizz{
@@ -509,22 +528,6 @@ footer p {
         transform: none;
     }
 }
-
-@keyframes coup-de-poing{
-    0% {
-        transform:translateX(-500%) scale(1.7, 0.2);
-    }
-    70%{
-        transform: translateX(-30%) scale(1.7, 0.2);
-    }
-    90%{
-        transform: translateX(0%) scale(0.7,1.5);
-    }
-    100% {
-        transform: none;
-    }
-}
-
 /*Animation sticker*/
 .sticker {
     width: 30vmin; /*Taille de l'image, c'est responsive*/
