@@ -241,7 +241,7 @@ header>a {
     background-size: cover;
     border-radius: 50%;
     box-shadow: -30px -20px 0 0 rgba(0, 0, 0, .15) inset, -70px -30px 0 0 rgba(0, 0, 0, .1) inset, 5px 5px 0 0 rgba(255, 255, 255, .2) inset;
-    animation: rotationEarth 35s infinite linear;
+    animation: rotationEarth 2000s infinite linear;
     position: relative;
 }
 @keyframes rotationEarth {
@@ -250,7 +250,7 @@ header>a {
     }
 
     to {
-        background-position: -396px center;
+        background-position: -30000px center;
     }
 }
 /* Animation terre */
@@ -294,10 +294,6 @@ div#main-planète-fond {
     from {
         width: 0%;
     }
-
-    to {
-        
-    }
 }
 
 @keyframes blinkTextCursor {
@@ -306,7 +302,7 @@ div#main-planète-fond {
     }
 
     to {
-        border-right-color: transparent;
+        border-right: none;
     }
 }
 .fondmainaccueil {
@@ -443,7 +439,7 @@ footer a p:hover,footer a img:hover{
 .benefique-main section,
 .benefique-main p {
     /* Centrer le bloc et évité qu'il s'étire de trop */
-    max-width: 1100px;
+    max-width: 1700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -454,7 +450,7 @@ footer a p:hover,footer a img:hover{
     text-transform: uppercase;
     padding-left: 25%;
     font-family: Iconic;
-    font-size: 48px;
+    font-size: 2.8em;
     padding-right: 2.5%;
     margin-top: 5%;
 }
@@ -472,14 +468,14 @@ footer a p:hover,footer a img:hover{
 .benefique-main div section div p {
     /*Les paragraphes*/
     text-align: justify;
-    font-size: 36px;
+    font-size: 1.6em;
     font-family: Quicksand;
     padding-right: 2.5%;
 }
 
 .benefique-main section img {
     /* premiere image */
-    width: 25%;
+    width: 20%;
     position: relative;
     z-index: 1;
 }
@@ -534,73 +530,6 @@ footer a p:hover,footer a img:hover{
         transform: none;
     }
 }
-/*Animation sticker*/
-.sticker {
-    width: 30vmin; /*Taille de l'image, c'est responsive*/
-    height: 30vmin;
-    margin-left: auto; /*Pour la presentation*/
-    margin-right: auto; /*Pour la presentation*/
-    /*transform-style: preserve-3d; /*Pour coller par 'en-dessous', si on enleve, colle 'par-dessus'*/
-    position: relative; /*On peut changer le positionnement*/ 
-    /*animation: angle 1s both; /*Pour donner un angle à l'image*/
-
-}
-
-.sticker::before,
-.sticker::after {
-    content: ''; /*Pour afficher le bloc*/
-    display: block;
-    position: absolute; /*Obligé*/
-    width: 100%; /*Pour que les deux blocs prennent entièrement la place du bloc parent*/
-    height: 100%;
-    background: center / cover url(../images/pouce-positif-benefique.svg);
-}
-
-div.sticker::before {
-    animation: cote-positif 4s both;
-}
-
-@keyframes cote-positif {
-    from {
-        clip-path: inset(0 80% 0 0);
-    }
-
-    50%,
-    to {
-        clip-path: inset(0 0% 0 0);
-    }
-}
-
-.sticker::after {
-    filter: brightness(0.2); /*Assombit le mirroir*/
-    transform: rotateY(-180deg); /*Pour avoir le mirroir*/
-    animation:  cote-negatif 4s both;
-
-}
-
-@keyframes cote-negatif {
-    from {
-        clip-path: inset(0 0 0 20%); /*Permet de définir où commence l'animation, il faut que les deux positif+negatif=100%*/
-        transform-origin: 20% 0;
-    }
-
-    50%,
-    to {
-        clip-path: inset(0 0 0 100%);
-        transform-origin: 100% 0;
-    }
-}
-
-@keyframes angle { /*On peut varier la taille de l'angle*/
-    from {
-        transform: rotate(-50deg);
-    }
-
-    to {
-        transform: rotate(-50deg);
-    }
-}
-/*Animation sticker*/ 
 .benefique-main div section div img {
     /* Les autres images */
     width: 20%;
@@ -646,7 +575,7 @@ div.sticker::before {
     /* Titre */
     text-transform: uppercase;
     font-family: Iconic;
-    font-size: 80px;
+    font-size: 4em;
     color: #36A761;
     padding-left: 2.5%;
 }
@@ -654,7 +583,7 @@ div.sticker::before {
 .benefique-main>p {
     /* Le texte */
     text-align: justify;
-    font-size: 36px;
+    font-size: 1.6em;
     font-family: Quicksand;
     padding-left: 2.5%;
     padding-right: 2.5%;
@@ -762,6 +691,8 @@ div.sticker::before {
     padding-right: 60px;
     color: #fff;
     height: 411px;
+    text-align: justify;
+    font-size: 1.2em;
 }
 
 .corpNefaste .article1 h3 {
@@ -780,6 +711,7 @@ div.sticker::before {
     justify-content: space-around;
     padding-right: 60px;
     padding-left: 60px;
+    text-align: justify;
 }
 
 .corpNefaste .titre-art {
@@ -816,7 +748,7 @@ h2.neutre {
 p.neutre {
     color: black;
     position: relative;
-
+    text-align:justify;
 }
 
 article.neutre {
@@ -838,7 +770,7 @@ section+p.neutre {
 }
 
 h3.neutre {
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -1033,16 +965,11 @@ footer.neutre p {
     }
 }
 
-@media (min-width: 2000px){
-    .earth{
-        left:60vw;
-    }
-}
-@media (max-width: 2000px){
+@media (max-width: 5000px){
     .earth{
         position: absolute;
         top: -100px;
-        left: 70vw;
+        left: 80vw;
         width: 300px;
         height: 300px;
     }
@@ -1050,6 +977,13 @@ footer.neutre p {
         margin-top: 100px;
     }
 }
+
+@media (max-width: 1546px){
+    .earth{
+        left: 70vw;
+    }
+}
+
 @media (max-width: 1282px){
     .mainAcceuil .cartes {
         margin-top: 200px;
@@ -1100,7 +1034,7 @@ footer.neutre p {
         width: 150px;
         height: 150px;
         left: 47vw;
-        top: -85px;
+        top: -75px;
     }
 }
 /* -------Media query du Main neutre------- */
@@ -1205,6 +1139,16 @@ footer.neutre p {
 }
 
 /*---------------Nefaste----------------*/
+@media (max-width: 1530px){
+    .mainNefaste .article1{
+        height: 450px;
+    }
+}
+@media (max-width: 1370px) {
+    .mainNefaste .article1 {
+        height: 480px;
+    }
+}
 @media (max-width: 1333px) {
     .mainNefaste .corpNefaste .article1 img {
         width: 70%;
@@ -1224,65 +1168,24 @@ footer.neutre p {
     }
 
     .mainNefaste .corpNefaste .article1 {
-        height: 800px;
-        width: 100%;
-    }
-
-    .mainNefaste .corpNefaste .article1 {
-        height: 730px;
-    }
-}
-
-@media (max-width: 890px) {
-    .mainNefaste .corpNefaste .article1 {
-        height: 700px;
-    }
-}
-
-@media (max-width: 585px) {
-    .mainNefaste .corpNefaste .article1 {
-        height: 730px;
-    }
-}
-
-@media (max-width: 537px) {
-    .mainNefaste .corpNefaste .article1 {
-        height: 760px;
-    }
-}
-
-@media (max-width: 510px) {
-    .mainNefaste .corpNefaste .article1 {
-        height: 810px;
-    }
-}
-
-@media (max-width: 500px) {
-
-    .mainNefaste .corpNefaste .article2 img,
-    .mainNefaste .corpNefaste .article3 img {
-        width: 25%;
-    }
-}
-
-@media (max-width: 470px) {
-    .mainNefaste .corpNefaste .article1 {
         height: 850px;
     }
 }
-
-@media (max-width: 445px) {
-    .mainNefaste .corpNefaste .article1 {
-        height: 880px;
+@media (max-width: 638px) {
+    .mainNefaste .article1 {
+        height: 890px;
     }
 }
-
-@media (max-width: 425px) {
-    .mainNefaste .corpNefaste .article1 {
-        height: 910px;
+@media (max-width: 622px) {
+    .mainNefaste .article1 {
+        height: 940px;
     }
 }
-
+@media (max-width: 590px) {
+    .mainNefaste .article1 {
+        height: 0000px;
+    }
+}
 @media (max-width: 420px) {
 
     .mainNefaste .corpNefaste .article2,
@@ -1307,23 +1210,14 @@ footer.neutre p {
     }
 }
 
-@media (max-width: 410px) {
-    .mainNefaste .corpNefaste .article1 {
-        height: 950px;
-    }
-
-    .mainNefaste h2 {
-        font-size: 1.7em;
-    }
-}
-
+/*
 @media (max-width: 390px) {
     .mainNefaste .corpNefaste .article1 {
         height: 800px;
         padding-right: 10px;
         padding-left: 10px;
     }
-}
+}*/
 
 @media (max-width: 381px) {
     .mainNefaste .hautpageNefaste img {
@@ -1332,9 +1226,9 @@ footer.neutre p {
 }
 
 @media (max-width: 370px) {
-    .mainNefaste .corpNefaste .article1 {
+    /*.mainNefaste .corpNefaste .article1 {
         height: 850px;
-    }
+    }*/
 
     .corpNefaste h3 {
         font-size: 1em;
@@ -1342,10 +1236,10 @@ footer.neutre p {
     }
 }
 @media (max-width: 330px) {
-    .mainNefaste .corpNefaste .article1 {
+    /*.mainNefaste .corpNefaste .article1 {
         height: 890px;
         width: 100%;
-    }
+    }*/
 }
 @media (max-width: 310px) {
     .mainNefaste .corpNefaste .article1 {
