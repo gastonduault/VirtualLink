@@ -10,7 +10,7 @@
     <link rel="icon" type="images/png" href="images/logo-terre.svg" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/anime.js"></script>
 </head>
 
@@ -18,7 +18,7 @@
     <header class="headerNefaste">
          <div>
              <a href="index.html" class="logo">
-                 <img src="images/Logo-Terre.png" height="38px" title="Logo domotique" alt="logo domotique"
+                 <img src="images/Logo-Terre.png" height="38" width="32" title="Virtual link" alt="logo Virtual Link"
                      class="appear" data-delai="100">
              </a>
              <a href="index.html">
@@ -38,16 +38,16 @@
              </nav>
          </div>
 
-         <div class="headerSmartphone" class="appear" data-delai="400">
+         <div class="headerSmartphone appear" data-delai="400">
              <div class="burger">
                  <span></span>
              </div>
              <nav>
-                 <lu>
+                 <ul>
                      <li><a href="benefique.html">Benefique</a></li>
                      <li><a href="nefaste.html">Nefaste</a></li>
                      <li><a href="page_neutre.html">Bilan</a></li>
-                 </lu>
+                 </ul>
              </nav>
          </div>
     </header>
@@ -56,30 +56,36 @@
             <h2 class="appear" data-delai="300">
                 Le rôle néfaste des réseaux sociaux
             </h2>
-            <img src="images/nefaste.svg" width="30%" class="appear" data-delai="500">
+            <img src="images/nefaste.svg" class="appear imageHautPageNefaste" alt="image nefaste" title="image nefaste">
         </div>
         <section class="sectioncartesNefaste">
             <article class="carteNefaste">
-                <img src="images/violence.svg" width="70%" class="appear" data-delai="400">
+                <img src="images/violence.svg" class="appear imageNefasteCarte1-2" data-delai="400"
+                    alt="image violence des réseaux sociaux" title="image violence des réseaux sociaux">
                 <p>VIOLENCE</p>
             </article>
             <article class="carteNefaste">
-                <img src="images/respectNefaste.svg" width="70%" class="appear" data-delai="400">
+                <img src="images/respectNefaste.svg"  class="appear imageNefasteCarte1-2" data-delai="400"
+                    alt="image sur le regard sur autrui" title="image sur le regard sur autrui">
                 <p>REGARD SUR AUTRUI</p>
             </article>
             <article class="carteNefaste">
-                <img src="images/addiction.svg" width="65%" class="appear" data-delai="400">
+                <img src="images/addiction.svg" class="appear imageNefasteCarte3" data-delai="400"
+                alt="image sur la cyberdependance des réseaux sociaux" title="image sur la cyberdependance des réseaux
+                sociaux">
                 <p>CYBERDEPENDANCE</p>
             </article>
         </section>
         <section class="corpNefaste">
-            <img src="images/formeSupNefaste.svg" class="formeNefaste">
+            <img src="images/formeSupNefaste.svg" class="formeNefaste" alt="Forme" title="Belle forme" >
             <article class="article1">
-                <h3 class="appear" data-delai="500">
+                <h3 class="appear" data-delai="300">
                     La violence
                 </h3>
-                <img src="images/graphiqueNefaste.png" width="600px" class="appear" data-delai="600">
-                <p class="appear" data-delai="600">
+                <img src="images/graphiqueNefaste.png" width="600" class="appear" data-delai="300"
+                    alt="graphique représentant la violence des réseaux sociaux"
+                    title="graphique représentant la violence des réseaux sociaux">
+                <p class="appear" data-delai="300">
                     Certaines personnes trouvent une satisfaction sur Internet, pour d’autres il faut
                     se préparer au pire dès qu'elles se connectent aux réseaux sociaux. Victimes de
                     <strong>cyberintimidation</strong> ou de <strong>harcèlement</strong>, les élèves moqués en classe
@@ -95,11 +101,13 @@
                     accessibles au public, mieux c'est.
                 </p>
             </article>
-            <img src="images/formeInfNefaste.svg" class="formeNefaste">
+            <img src="images/formeInfNefaste.svg" class="formeNefaste" alt="Forme" title="Belle forme">
 
-            <h3 class="titre-art appear" data-delai="500">REGARD SUR AUTRUI</h3>
+            <h3 class="titre-art appear" data-delai="300">REGARD SUR AUTRUI</h3>
             <article class="article2">
-                <img src="images/oeilNefaste.svg" width="15%" class="appear" data-delai="700">
+                <img src="images/oeilNefaste.svg" class="appear NefasteArt2-3" data-delai="300"
+                    alt="Une image d'oeil qui représente le regarde sur autrui avec les réseaux sociaux"
+                    title="Une image d'oeil qui représente le regarde sur autrui avec les réseaux sociaux">
                 <p class="appear" data-delai="900">Une étude menée par la Royal Society for Public Health sur
                     un public de 1500 jeunes de 14 à
                     24 ans, déclare que les réseaux sociaux sont liés à la santé mentale.
@@ -111,9 +119,9 @@
                     il s'agit de diffuser une image extrêmement favorable de soi et d'avoir un retour dessus.
                 </p>
             </article>
-            <h3 class="titre-art appear" data-delai="500">La Cyberdépendance</h3>
+            <h3 class="titre-art appear" data-delai="300">La Cyberdépendance</h3>
             <article class="article3">
-                <p class="appear" data-delai="700"> Les jeunes sont particulièrement vulnérables à la dépendance vis à vis
+                <p class="appear" data-delai="300"> Les jeunes sont particulièrement vulnérables à la dépendance vis à vis
                     d’Internet : dans une phase de la vie où les contacts sociaux jouent un rôle important dans l’estime
                     de soi et l’identification, les likes et demandes d’amis conduisent à passer de plus en plus de
                     temps devant son écran.
@@ -122,15 +130,17 @@
                     <br />
                     Les réseaux sociaux sont logiques et simples d’utilisation et sont conçus de façon à ce que l’on reste connecté le plus longtemps possible: même un enfant de 5 ans est capable de manipuler facilement son smartphone. Nous devons rester vigilants vis-à-vis de cette addiction.
                 </p>
-                <img src="images/addictionNefaste.svg" width="15%" class="appear" data-delai="900">
+                <img src="images/addictionNefaste.svg" class="appear NefasteArt2-3" data-delai="300"
+                    alt="image de tête de mort représentant la cyberdependance vis à vis des réseaux sociaux"
+                    title="image de tête de mort représentant la cyberdependance vis à vis des réseaux sociaux">
             </article>
         </section>
         <script src="js/app.js"></script>
     </main>
     <footer>
-        <img src="images/fondFooterNefaste.svg" class="FondFooter">
-        <a>
-            <img src="images/Logo-Terre.png" alt="erreur" title="logo-earth" width="6%">
+        <img src="images/fondFooterNefaste.svg" class="FondFooter" alt="Footer" title="Un sacré pied de page">
+        <a href="index.html">
+            <img src="images/Logo-Terre.png" alt="logo de Virtual Links" title="logo-earth" width="50">
         </a>
         <a href="./copyright.html">
             <p>

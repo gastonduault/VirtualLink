@@ -389,6 +389,7 @@ footer a img {
     left: 3%;
     bottom: 0%;
     padding-bottom: 3%;
+    width: 6%;
 }
 
 footer p {
@@ -481,9 +482,7 @@ footer a p:hover,footer a img:hover{
     height: 20%;
     position: relative;
     z-index: 1;
-}
-.benefique-main img:active{
-    animation:  wizz 1s 1 ease-in-out;
+    animation: wizz 1s  0.2s ease-in 1;
 }
 
 .benefique-main div section div img {
@@ -604,6 +603,15 @@ footer a p:hover,footer a img:hover{
     padding-right: 10px;
 }
 
+.imageHautPageNefaste{
+    width: 30%;
+    animation-name: bounceIn;
+    animation-duration: 450ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
 .sectioncartesNefaste {
     width: 100%;
     display: inline-flex;
@@ -616,6 +624,13 @@ footer a p:hover,footer a img:hover{
     display: block;
     flex-direction: column;
     width: 170px;
+}
+
+.imageNefasteCarte1-2{
+    width:75%;
+}
+.imageNefasteCarte3{
+    width:61%;
 }
 
 .carteNefaste:nth-child(2) {
@@ -649,9 +664,9 @@ footer a p:hover,footer a img:hover{
     padding-left: 60px;
     padding-right: 60px;
     color: #fff;
-    height: 411px;
     text-align: justify;
     font-size: 1.2em;
+    height: 411px;
 }
 
 .corpNefaste .article1 h3 {
@@ -671,6 +686,10 @@ footer a p:hover,footer a img:hover{
     padding-right: 60px;
     padding-left: 60px;
     text-align: justify;
+    font-size: 1.2em;
+}
+.NefasteArt2-3{
+    width:15%;
 }
 
 .corpNefaste .titre-art {
@@ -785,52 +804,38 @@ footer.neutre p {
     color: black;
 }
 /*-----Key-frames--------*/
-
-@keyframes wizz{
-    0%{
-        transform: none;
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+@keyframes wizz {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+}
+  @keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translate3d(0, 0, 0);
     }
-    20%{
-        transform: scale(1.2);
-    }
-    30%{
-        transform: rotate(-12deg) scale(1.2);
-    }
-    40%{
-        transform: rotate(15deg) scale(1.2);
-    }
-    50%{
-        transform: rotate(-10deg) scale(1.2);
-    }
-    60%{
-        transform: rotate(0deg) scale(1.2);
-    }
-    80%{
-        transform: scale(0.9);
-    }
-    90%{
+    50% {
+        opacity: 0.9;
         transform: scale(1.1);
     }
-    100%{
-        transform: scale(1);
+    80% {
+        opacity: 1;
+        transform: scale(0.89);
     }
-}
-
-@keyframes petit-mouv{
-    0%{
-        transform: none;
-    }
-    25%{
-        transform: translateX(-20%) translateY(-20%) scale(0.8);
-    }
-    50%{
-        transform: translateX(-20%) translateY(5%) scale(1.01);
-    }
-    75%{
-        transform: translateX(5%) translateY(-10%) scale(0.9);
-    }
-    100%{
-        transform: none;
+    100% {
+        opacity: 1;
+        transform: scale(1) translate3d(0, 0, 0);
     }
 }
 
@@ -973,6 +978,7 @@ footer.neutre p {
         animation: none;
         text-align: center;
         white-space: normal;
+        border: none;
     }
 }
 
@@ -1148,18 +1154,19 @@ footer.neutre p {
         padding:0;
     }
 }
-
 /*---------------Nefaste----------------*/
-@media (max-width: 1530px){
-    .mainNefaste .article1{
+@media (max-width: 1530px) {
+    .mainNefaste .article1 {
         height: 450px;
     }
 }
+
 @media (max-width: 1370px) {
     .mainNefaste .article1 {
         height: 480px;
     }
 }
+
 @media (max-width: 1333px) {
     .mainNefaste .corpNefaste .article1 img {
         width: 70%;
@@ -1176,25 +1183,22 @@ footer.neutre p {
 
     .mainNefaste .article1 h3 {
         text-align: center;
+        padding-left: 0px;
+        margin-left: 0px;
     }
 
     .mainNefaste .corpNefaste .article1 {
-        height: 850px;
+        height: auto;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
     }
 }
-@media (max-width: 638px) {
-    .mainNefaste .article1 {
-        height: 890px;
+@media (max-width: 530px) {
+    .imageHautPageNefaste {
+        width: 50%;
     }
-}
-@media (max-width: 622px) {
-    .mainNefaste .article1 {
-        height: 940px;
-    }
-}
-@media (max-width: 590px) {
-    .mainNefaste .article1 {
-        height: 0000px;
+    .NefasteArt2-3{
+        width: 40%;
     }
 }
 @media (max-width: 420px) {
@@ -1221,48 +1225,20 @@ footer.neutre p {
     }
 }
 
-/*
 @media (max-width: 390px) {
     .mainNefaste .corpNefaste .article1 {
-        height: 800px;
         padding-right: 10px;
         padding-left: 10px;
     }
-}*/
-
-@media (max-width: 381px) {
-    .mainNefaste .hautpageNefaste img {
-        width: 100px;
-    }
 }
+
 
 @media (max-width: 370px) {
-    /*.mainNefaste .corpNefaste .article1 {
-        height: 850px;
-    }*/
-
     .corpNefaste h3 {
-        font-size: 1em;
-        text-align: center;
+        text-align: left;
     }
 }
-@media (max-width: 330px) {
-    /*.mainNefaste .corpNefaste .article1 {
-        height: 890px;
-        width: 100%;
-    }*/
-}
-@media (max-width: 310px) {
-    .mainNefaste .corpNefaste .article1 {
-        height: 960px;
-        width: 100%;
-    }
-}
-@media (max-width: 280px) {
-    .carteNefaste p {
-        font-size: 0.8em;
-    }
-}
+
 @media (max-width: 280px) {
     .carteNefaste p {
         font-size: 0.8em;
