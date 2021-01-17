@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Quicksand';
     src: url(../font/Quicksand_Book.otf);
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Iconic';
     src: url(../font/Iconic\ Trial\ Regular\ 400.ttf);
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -455,6 +455,7 @@ footer a p:hover,footer a img:hover{
     padding-right: 5%;
     margin-top: 5%;
     text-align: left;
+    font-weight: bold;
 }
 
 
@@ -536,6 +537,7 @@ footer a p:hover,footer a img:hover{
     font-size: 4em;
     color: #36A761;
     padding-left: 5%;
+    font-weight: bold;
 }
 
 .benefique-main>p {
@@ -592,6 +594,8 @@ footer a p:hover,footer a img:hover{
     font-family: Quicksand;
     padding-top: 80px;
     font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .hautpageNefaste {
@@ -605,11 +609,7 @@ footer a p:hover,footer a img:hover{
 
 .imageHautPageNefaste{
     width: 30%;
-    animation-name: bounceIn;
-    animation-duration: 450ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation: bounceIn 450ms linear forwards 0.2s;
     opacity: 0;
 }
 .sectioncartesNefaste {
@@ -624,6 +624,7 @@ footer a p:hover,footer a img:hover{
     display: block;
     flex-direction: column;
     width: 170px;
+    
 }
 
 .imageNefasteCarte1-2{
@@ -645,6 +646,7 @@ footer a p:hover,footer a img:hover{
     padding-top: 20px;
     color: #FE4239;
     font-family: Quicksand;
+    font-weight: bold;
 }
 
 .corpNefaste {
@@ -656,7 +658,10 @@ footer a p:hover,footer a img:hover{
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
-
+.corpNefaste h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .corpNefaste .article1 {
     width: 100%;
     background-color: #FE4239;
@@ -672,10 +677,13 @@ footer a p:hover,footer a img:hover{
 .corpNefaste .article1 h3 {
     margin-top: 0px;
     text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .corpNefaste .article1 img {
     float: right;
+    margin-left: 10px;
 }
 
 .corpNefaste .article2,
@@ -707,7 +715,20 @@ footer a p:hover,footer a img:hover{
     margin-left: 30px;
     margin-bottom: 100px;
 }
-
+#Nefastefluo{
+    background-color: #FFFF;
+    color: #FE4239;
+    border-radius: 3px 3px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+#NefasteFluo2{
+    background-color: #FE4239;
+    color: #FFFF;
+    border-radius: 3px 3px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
 /* -----------PARTIE NEUTRE---------------*/
 
 /* ------Main neutre--------*/
@@ -717,7 +738,7 @@ h2.neutre {
     text-align: center;
     color: #E5DF3A;
     font-weight: bold;
-
+    text-transform: uppercase;
     position: relative;
     top: 20px;
     margin: 80px 30px;
@@ -757,6 +778,7 @@ h3.neutre {
 .div-img {
     width: auto;
     padding: 0%;
+    animation:wizz 1s ease-in 1;
 }
 
 .div-neutre {
@@ -1201,7 +1223,7 @@ footer.neutre p {
         width: 40%;
     }
 }
-@media (max-width: 420px) {
+@media (max-width: 520px) {
 
     .mainNefaste .corpNefaste .article2,
     .mainNefaste .corpNefaste .article3 {
@@ -1214,8 +1236,8 @@ footer.neutre p {
 
     .corpNefaste .article2 img,
     .corpNefaste .article3 img {
-        margin-right: 30%;
-        margin-left: 30%;
+        margin-right: 20%;
+        margin-left: 20%;
     }
 
     .titre-art {
@@ -1223,12 +1245,18 @@ footer.neutre p {
         padding: 0px 0px;
         margin-left: 0px;
     }
+    .corpNefaste h3{
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 390px) {
     .mainNefaste .corpNefaste .article1 {
         padding-right: 10px;
         padding-left: 10px;
+    }
+    .imageHautPageNefaste {
+        width: 30%;    
     }
 }
 
